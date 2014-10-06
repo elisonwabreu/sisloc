@@ -50,7 +50,7 @@
             <div class="navbar navbar-fixed-top">
                 <div class="navbar-inner">
                     <div class="container">
-                        
+
                         <div id="fade-menu" class="pull-left">
                             <ul class="clearfix" id="mobile-nav">
                                 <li>
@@ -163,7 +163,7 @@
                             </nav>
                         </div>
                         <div class="span4">
-                            
+
                         </div>
                     </div>
                 </div>
@@ -186,146 +186,162 @@
                             <div class="w-box-header">
                                 <h4>Cadastro de clientes</h4>
                             </div>
-                            <div class="w-box-content">
-                                <form id="validate_field_types" action="" method="post">
-                                    <div class="formSep">
-                                        <div class="span10">
-                                            <div class="row-fluid">
-                                                <div class="span1">
-                                                    <label class="req">Cód:</label>
-                                                    <input class="span12" type="text" name="id" id="id" disabled />
+                            <div class="w-box-content cnt_b">
+                                <div class="tabbable tabbable-bordered">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a data-toggle="tab" href="#infP">Informações Pessoais</a></li>
+                                        <li><a data-toggle="tab" href="#infJ">Endereço</a></li>
+                                        <li><a data-toggle="tab" href="#tb1_c">Outras Informações</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div id="infP" class="tab-pane active">
+
+                                            <form id="validate_field_types" action="" method="post">
+                                                <div class="formSep">
+                                                    <div class="span10">
+                                                        <div class="row-fluid">
+                                                            <div class="span1">
+                                                                <label class="req">Cód:</label>
+                                                                <input class="span12" type="text" name="id" id="id" disabled />
+                                                            </div>
+                                                            <div class="span4">
+                                                                <label class="req">Nome Completo:</label>
+                                                                <input placeholder="Um Dois Tres de Oliveira Quatro" class="span12" type="text" name="nome" id="nome" />
+                                                            </div>
+                                                            <div class="span2">
+                                                                <label class="req">Tipo de Pessoa:</label>
+                                                                <select name="tipoPessoa" id="tipoPessoa" class="span12">
+                                                                    <option value="option1">Física</option>
+                                                                    <option value="option2">Juridica</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="span2">
+                                                                <label class="req">Status:</label>
+                                                                <select name="grupoPessoas" id="grupoPessoas" class="span12">
+                                                                    <option value="A">Ativo</option>
+                                                                    <option value="I">Inativo</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="span3">
+                                                                <label class="req">Grupo de Pessoas:</label>
+                                                                <select name="grupoPessoas" id="grupoPessoas" class="span12">
+                                                                    <option value="0">Nenhum</option>
+                                                                    <option value="option1">CE</option>
+                                                                    <option value="option2">SP</option>
+                                                                    <option value="option3">RJ</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row-fluid">
+                                                            <div class="span3">
+                                                                <label class="req">CPF:</label>
+                                                                <input placeholder="00000000000" class="span12" type="text" name="cpf" id="cpf" />
+                                                            </div>
+                                                            <div class="span3">
+                                                                <label class="req">RG:</label>
+                                                                <input placeholder="0000000000000" class="span12" type="text" name="rg" id="rg" />
+                                                            </div>
+                                                            <div class="span3">
+                                                                <label class="req">Orgão Expedidor (RG)</label>
+                                                                <input placeholder="SSP" class="span12" type="text" name="orgExped" id="orgExped" />
+                                                            </div>
+                                                            <div class="span3">
+                                                                <label class="req">Unidade Federativa:</label>
+                                                                <select name="val1_sport" id="val1_sport" class="span12">
+                                                                    <option></option>
+                                                                    <option value="option1">CE</option>
+                                                                    <option value="option2">SP</option>
+                                                                    <option value="option3">RJ</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row-fluid">
+                                                            <div class="span3">
+                                                                <label class="req">Data de Nascimento:</label>
+                                                                <input placeholder="00/00/0000" class="span12" type="text" name="cpf" id="cpf" />
+                                                            </div>
+                                                            <div class="span3">
+                                                                <label class="req">Sexo:</label>
+                                                                <select name="val1_sport" id="val1_sport" class="span12">
+                                                                    <option></option>
+                                                                    <option value="M">Masculino</option>
+                                                                    <option value="F">Feminino</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="span3">
+                                                                <label class="req">Estado Civil:</label>
+                                                                <select name="val1_sport" id="val1_sport" class="span12">
+                                                                    <option></option>
+                                                                    <option value="S">Solteiro</option>
+                                                                    <option value="D">Disvorciado</option>
+                                                                    <option value="C">Casado</option>
+                                                                    <option value="U">União Estavél</option>
+                                                                    <option value="V">Viúvo</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row-fluid">
+                                                            <div class="span3">
+                                                                <label class="req">Nome do Contato:</label>
+                                                                <input class="span12" type="text" name="contato" id="contato" />
+                                                            </div>
+                                                            <div class="span2">
+                                                                <label>Inadimplente:</label>
+                                                                <input class="span12" type="text" name="inad" id="inad" placeholder="Sim" disabled />
+                                                            </div>
+                                                            <div class="span2">
+                                                                <label class="req">Empresa:</label>
+                                                                <input class="span12" type="text" name="empresa" id="empresa"  />
+                                                            </div>
+                                                            <div class="span3">
+                                                                <label class="req">Cliente desde:</label>
+                                                                <input class="span12" type="text" name="empresa" id="empresa"  required />
+                                                            </div>
+                                                            <div class="span2">
+                                                                <label class="req">Percen. Desconto:</label>
+                                                                <select name="val1_sport" id="val1_sport" class="span12">
+                                                                    <option></option>
+                                                                    <option value="S">0.5%</option>
+                                                                    <option value="D">1%</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row-fluid">
+                                                            <div class="span6">
+                                                                <label class="req">Cliente desde:</label>
+                                                                <textarea class="span12" rows="5"></textarea>
+                                                            </div>
+                                                            <div class="span6">
+                                                                <label class="req">Percen. Desconto:</label>
+                                                                <textarea class="span12" rows="5"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="span2">
+                                                        <div class="fileupload fileupload-new" data-provides="fileupload">
+                                                            <div class="fileupload-new thumbnail" style="width: 150px; height: 150px;">
+                                                                <img src="assets/img/dummy_150x150.gif" alt="">
+                                                            </div>
+                                                            <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 150px; max-height: 150px; line-height: 20px;"></div>
+                                                            <div>
+                                                                <span class="btn btn-small btn-file"><span class="fileupload-new">Selecinar Foto</span><span class="fileupload-exists">Change</span><input type="file"></span>
+                                                                <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>	
+                                                <div class="formSep">
+                                                    <button type="submit" class="btn">Cadastrar</button>
                                                 </div>
-                                                <div class="span5">
-                                                    <label class="req">Nome Completo:</label>
-                                                    <input placeholder="Um Dois Tres de Oliveira Quatro" class="span12" type="text" name="nome" id="nome" />
-                                                </div>
-                                                <div class="span2">
-                                                    <label class="req">Tipo de Pessoa:</label>
-                                                    <select name="tipoPessoa" id="tipoPessoa" class="span12">
-                                                        <option value="option1">Física</option>
-                                                        <option value="option2">Juridica</option>
-                                                    </select>
-                                                </div>
-                                                <div class="span2">
-                                                    <label class="req">Status:</label>
-                                                    <select name="grupoPessoas" id="grupoPessoas" class="span12">
-                                                        <option value="A">Ativo</option>
-                                                        <option value="I">Inativo</option>
-                                                    </select>
-                                                </div>
-                                                <div class="span2">
-                                                    <label class="req">Grupo de Pessoas:</label>
-                                                    <select name="grupoPessoas" id="grupoPessoas" class="span12">
-                                                        <option value="0">Nenhum</option>
-                                                        <option value="option1">CE</option>
-                                                        <option value="option2">SP</option>
-                                                        <option value="option3">RJ</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row-fluid">
-                                                <div class="span3">
-                                                    <label class="req">CPF:</label>
-                                                    <input placeholder="00000000000" class="span12" type="text" name="cpf" id="cpf" />
-                                                </div>
-                                                <div class="span3">
-                                                    <label class="req">RG:</label>
-                                                    <input placeholder="0000000000000" class="span12" type="text" name="rg" id="rg" />
-                                                </div>
-                                                <div class="span3">
-                                                    <label class="req">Orgão Expedidor (RG)</label>
-                                                    <input placeholder="SSP" class="span12" type="text" name="orgExped" id="orgExped" />
-                                                </div>
-                                                <div class="span3">
-                                                    <label class="req">Unidade Federativa:</label>
-                                                    <select name="val1_sport" id="val1_sport" class="span12">
-                                                        <option></option>
-                                                        <option value="option1">CE</option>
-                                                        <option value="option2">SP</option>
-                                                        <option value="option3">RJ</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row-fluid">
-                                                <div class="span3">
-                                                    <label class="req">Data de Nascimento:</label>
-                                                    <input placeholder="00/00/0000" class="span12" type="text" name="cpf" id="cpf" />
-                                                </div>
-                                                <div class="span3">
-                                                    <label class="req">Sexo:</label>
-                                                    <select name="val1_sport" id="val1_sport" class="span12">
-                                                        <option></option>
-                                                        <option value="M">Masculino</option>
-                                                        <option value="F">Feminino</option>
-                                                    </select>
-                                                </div>
-                                                <div class="span3">
-                                                    <label class="req">Estado Civil:</label>
-                                                    <select name="val1_sport" id="val1_sport" class="span12">
-                                                        <option></option>
-                                                        <option value="S">Solteiro</option>
-                                                        <option value="D">Disvorciado</option>
-                                                        <option value="C">Casado</option>
-                                                        <option value="U">União Estavél</option>
-                                                        <option value="V">Viúvo</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row-fluid">
-                                                <div class="span3">
-                                                    <label class="req">Nome do Contato:</label>
-                                                    <input class="span12" type="text" name="contato" id="contato" />
-                                                </div>
-                                                <div class="span2">
-                                                    <label>Inadimplente:</label>
-                                                    <input class="span12" type="text" name="inad" id="inad" placeholder="Sim" disabled />
-                                                </div>
-                                                <div class="span2">
-                                                    <label class="req">Empresa:</label>
-                                                    <input class="span12" type="text" name="empresa" id="empresa"  />
-                                                </div>
-                                                <div class="span3">
-                                                    <label class="req">Cliente desde:</label>
-                                                    <input class="span12" type="text" name="empresa" id="empresa"  required />
-                                                </div>
-                                                <div class="span2">
-                                                    <label class="req">Percen. Desconto:</label>
-                                                    <select name="val1_sport" id="val1_sport" class="span12">
-                                                        <option></option>
-                                                        <option value="S">0.5%</option>
-                                                        <option value="D">1%</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="row-fluid">
-                                                <div class="span6">
-                                                    <label class="req">Cliente desde:</label>
-                                                    <textarea class="span12" rows="5"></textarea>
-                                                </div>
-                                                <div class="span6">
-                                                    <label class="req">Percen. Desconto:</label>
-                                                    <textarea class="span12" rows="5"></textarea>
-                                                </div>
-                                            </div>
+                                            </form>
+
                                         </div>
-                                        <div class="span2">
-                                            <div class="fileupload fileupload-new" data-provides="fileupload">
-                                                <div class="fileupload-new thumbnail" style="width: 150px; height: 150px;">
-                                                    <img src="assets/img/dummy_150x150.gif" alt="">
-                                                </div>
-                                                <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 150px; max-height: 150px; line-height: 20px;"></div>
-                                                <div>
-                                                    <span class="btn btn-small btn-file"><span class="fileupload-new">Selecinar Foto</span><span class="fileupload-exists">Change</span><input type="file"></span>
-                                                    <a href="#" class="btn fileupload-exists" data-dismiss="fileupload">Remove</a>
-                                                </div>
-                                            </div>
+                                        <div id="infJ" class="tab-pane">
+                                            Maluco
                                         </div>
-                                    </div>	
-                                    <div class="formSep">
-                                        <button type="submit" class="btn">Cadastrar</button>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                            </div>   
                         </div>
                     </div>
                 </div>  
@@ -338,7 +354,7 @@
             <div class="container">
                 <div class="row">
                     <div class="span5">
-                        <div>&copy; Your Company 2012</div>
+                        <div>&copy; Doctype Sloutions</div>
                     </div>
                     <div class="span7">
                         <ul class="unstyled">
