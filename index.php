@@ -68,62 +68,14 @@
                                         <li>
                                             <a href="#">Pessoas</a>
                                             <ul>
-                                                <li><a href="#">Clientes</a>
-                                                    <ul>
-                                                        <li><a href="?modulo=pessoas/clientes&url=listar">Listar</a></li>
-                                                        <li><a href="?modulo=pessoas/clientes&url=cadastrar">Cadastrar</a></li>
-                                                        <li><a href="?modulo=pessoas/clientes&url=editar">Editar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Fornecedores</a>
-                                                    <ul>
-                                                        <li><a href="?modulo=pessoas/fornecedores&url=listar">Listar</a></li>
-                                                        <li><a href="?modulo=pessoas/fornecedores&url=cadastrar">Cadastrar</a></li>
-                                                        <li><a href="?modulo=pessoas/fornecedores&url=editar">Editar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Empresas</a>
-                                                    <ul>
-                                                        <li><a href="?modulo=pessoas/empresas&url=listar">Listar</a></li>
-                                                        <li><a href="?modulo=pessoas/empresas&url=cadastrar">Cadastrar</a></li>
-                                                        <li><a href="?modulo=pessoas/empresas&url=editar">Editar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Funcinários</a>
-                                                    <ul>
-                                                        <li><a href="?modulo=pessoas/funcionarios&url=listar">Listar</a></li>
-                                                        <li><a href="?modulo=pessoas/funcionarios&url=cadastrar">Cadastrar</a></li>
-                                                        <li><a href="?modulo=pessoas/funcionarios&url=editar">Editar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Organizadores / Patrocinadores</a>
-                                                    <ul>
-                                                        <li><a href="?modulo=pessoas/org_patro&url=listar">Listar</a></li>
-                                                        <li><a href="?modulo=pessoas/org_patro&url=cadastrar">Cadastrar</a></li>
-                                                        <li><a href="?modulo=pessoas/org_patro&url=editar">Editar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Agenda de Contatos</a>
-                                                    <ul>
-                                                        <li><a href="?modulo=pessoas/agenda_contatos&url=listar">Listar</a></li>
-                                                        <li><a href="?modulo=pessoas/agenda_contatos&url=cadastrar">Cadastrar</a></li>
-                                                        <li><a href="?modulo=pessoas/agenda_contatos&url=editar">Editar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Cargos</a>
-                                                    <ul>
-                                                        <li><a href="?modulo=pessoas/cargos&url=listar">Listar</a></li>
-                                                        <li><a href="?modulo=pessoas/cargos&url=cadastrar">Cadastrar</a></li>
-                                                        <li><a href="?modulo=pessoas/cargos&url=editar">Editar</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="#">Pronomes de Tratamento</a>
-                                                    <ul>
-                                                        <li><a href="?modulo=pessoas/pronomes_trat&url=listar">Listar</a></li>
-                                                        <li><a href="?modulo=pessoas/pronomes_trat&url=cadastrar">Cadastrar</a></li>
-                                                        <li><a href="?modulo=pessoas/pronomes_trat&url=editar">Editar</a></li>
-                                                    </ul>
-                                                </li>
+                                                <li><a href="?modulo=pessoas/clientes&url=cadastrar">Clientes</a></li>
+                                                <li><a href="?modulo=pessoas/fornecedores&url=cadastrar">Fornecedores</a></li>
+                                                <li><a href="?modulo=pessoas/empresas&url=listar">Empresas</a></li>
+                                                <li><a href="?modulo=pessoas/funcionarios&url=listar">Funcinários</a></li>
+                                                <li><a href="?modulo=pessoas/org_patro&url=listar">Organizadores / Patrocinadores</a></li>
+                                                <li><a href="?modulo=pessoas/agenda_contatos&url=listar">Agenda de Contatos</a></li>
+                                                <li><a href="?modulo=pessoas/cargos&url=listar">Cargos</a></li>
+                                                <li><a href="?modulo=pessoas/pronomes_trat&url=listar">Pronomes de Tratamento</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -294,6 +246,9 @@
             }
             $url->mudaEstilo($urli,"js"); 
         ?>
+        
+
+        <script src="assets/js/pages/beoro_dashboard.js"></script>
 
     </body>
 </html>
