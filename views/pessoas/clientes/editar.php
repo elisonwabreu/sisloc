@@ -157,9 +157,9 @@
                                                 </div>	
                                                 <div class="formSep">
                                                     <button type="submit" class="btn-success">Cadastrar</button>
-                                                    <button type="submit" class="btn-danger">Cancelar</button
+                                                    <button type="submit" class="btn-danger">Cancelar</button>
                                                 </div>
-                                            </form>
+                                            
 
                                         </div><!-- fim das informações pessoais -->                                        
                                         <div id="endereco" class="tab-pane"><!-- Outras Informações -->
@@ -170,7 +170,7 @@
                                         <div id="oldInfo" class="tab-pane"><!-- Fim Outras Informações -->
                                         
 
-                                        
+                                        </form>
                                         </div><!-- Fim Endereço -->
                                     </div>
                                 </div>
