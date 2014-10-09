@@ -46,5 +46,8 @@
             <script type="text/javascript" src="assets/js/lib/plupload/js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
         <!-- WYSIWG Editor -->
             <script src="assets/js/lib/ckeditor/ckeditor.js"></script>
-            
+        
             <script src="assets/js/pages/beoro_form_elements.js"></script>
+            
+            
+            

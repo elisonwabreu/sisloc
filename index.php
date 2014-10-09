@@ -203,13 +203,13 @@
             <div class="container-fluid">
                 <div class="row-fluid">
                     <div class="span5">
-                        <div>&copy; Your Company 2012</div>
+                        <div>&copy; DocType Solutions</div>
                     </div>
                     <div class="span7">
                         <ul class="unstyled">
-                            <li><a href="#">First link</a></li>
+                            <li><a href="./">Inico</a></li>
                             <li>&middot;</li>
-                            <li><a href="#">Second link</a></li>
+                            <li><a href="./">Link</a></li>
                         </ul>
                     </div>
                 </div>
@@ -236,7 +236,6 @@
         <!-- common functions -->
         <script src="assets/js/beoro_common.js"></script>
 
-
         <?php 
             //troca efetivamente a tela do sistema
             if( !empty( $_GET['url'] ) ){
@@ -246,9 +245,6 @@
             }
             $url->mudaEstilo($urli,"js"); 
         ?>
-        
-
-        <script src="assets/js/pages/beoro_dashboard.js"></script>
 
     </body>
 </html>

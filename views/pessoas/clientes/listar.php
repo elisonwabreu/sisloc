@@ -8,18 +8,23 @@
                     <div class="span12">
                         <div class="w-box">
                             <div class="w-box-header">
-                                <h4><?php $mTitle->trocarTitulo($_GET['url'], $_GET['modulo']);//realiza a mudança do titulo automaticamente ?></h4>
+                                <h4><?php $mTitle->trocarTitulo($_GET['url'], $_GET['modulo']);//realiza a mudança do titulo automaticamente ?></h4>                                
                             </div>
                             <div class="w-box-content cnt_b">
                                 <div class="tabbable tabbable-bordered">
                                     <ul class="nav nav-tabs">
                                         <li class="active"><a data-toggle="tab" href="#pf">Pessoa Física</a></li>
-                                        <li><a data-toggle="tab" href="#pj">Pessoa Física</a></li>
+                                        <li><a data-toggle="tab" href="#pj">Pessoa Juridica</a></li>
                                     </ul>
                                     <div class="tab-content"><!-- Listagem de pessoa fisica -->
                                         <div id="pf" class="tab-pane active">
+                                            <ul class="ico-list">
+                                                <li><a href="#" alt="Cadastrar" title="Cadastrar"><i class="splashy-add"></i></a></li>
+                                                <li><a href="#" alt="Editar" title="Editar"><i class="splashy-pencil"></i></a></li>
+                                                <li><a href="#" alt="Excluir" title="Excluir"><i class="splashy-error_x"></i></a></li>
+                                            </ul>
                                             <!-- DATATABLES -->    
-                                            <div class="w-box w-box-orange">
+                                            <div class="w-box w-box-blue">
                                                 <div class="w-box-header">
                                                     <h4>Listagem Pessoa Física</h4>
                                                 </div>
@@ -296,8 +301,13 @@
 
                                         </div><!-- fim da Listagem de pessoa fisica -->                                        
                                         <div id="pj" class="tab-pane"><!-- Listagem de pessoa juridica -->
+                                            <ul class="ico-list">
+                                                <li><a href="#" alt="Cadastrar" title="Cadastrar"><i class="splashy-add"></i></a></li>
+                                                <li><a href="#" alt="Editar" title="Editar"><i class="splashy-pencil"></i></a></li>
+                                                <li><a href="#" alt="Excluir" title="Excluir"><i class="splashy-error_x"></i></a></li>
+                                            </ul>
                                             <!-- DATATABLES -->    
-                                            <div class="w-box w-box-orange">
+                                            <div class="w-box w-box-blue">
                                                 <div class="w-box-header">
                                                     <h4>Listagem Pessoa Juridica</h4>
                                                 </div>

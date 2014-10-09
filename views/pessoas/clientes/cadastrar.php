@@ -26,11 +26,11 @@
                                                         <div class="row-fluid">
                                                             <div class="span1">
                                                                 <label class="req">Cód:</label>
-                                                                <input class="span12" type="text" name="id" id="id" disabled />
+                                                                <input class="span12" type="text" name="id" id="id" value="000000" disabled />
                                                             </div>
                                                             <div class="span4">
                                                                 <label class="req">Nome Completo:</label>
-                                                                <input placeholder="Um Dois Tres de Oliveira Quatro" class="span12" type="text" name="nome" id="nome" />
+                                                                <input placeholder="Um Dois Tres de Oliveira Quatro" class="span12" type="text" name="nome" id="nome" required />
                                                             </div>
                                                             <div class="span2">
                                                                 <label class="req">Tipo de Pessoa:</label>
@@ -41,14 +41,14 @@
                                                             </div>
                                                             <div class="span2">
                                                                 <label class="req">Status:</label>
-                                                                <select name="grupoPessoas" id="grupoPessoas" class="span12">
+                                                                <select name="grupoPessoas" id="grupoPessoas" class="span12" required >
                                                                     <option value="A">Ativo</option>
                                                                     <option value="I">Inativo</option>
                                                                 </select>
                                                             </div>
                                                             <div class="span3">
                                                                 <label class="req">Grupo de Pessoas:</label>
-                                                                <select name="grupoPessoas" id="grupoPessoas" class="span12">
+                                                                <select name="grupoPessoas" id="grupoPessoas" class="span12" required >
                                                                     <option value="0">Nenhum</option>
                                                                     <option value="option1">CE</option>
                                                                     <option value="option2">SP</option>
@@ -59,19 +59,19 @@
                                                         <div class="row-fluid">
                                                             <div class="span3">
                                                                 <label class="req">CPF:</label>
-                                                                <input class="span12" type="text" name="cpf" id="mask_cpf" />
+                                                                <input class="span12" type="text" name="cpf" id="mask_cpf" required />
                                                             </div>
                                                             <div class="span3">
                                                                 <label class="req">RG:</label>
-                                                                <input placeholder="0000000000000" class="span12" type="text" name="rg" id="rg" />
+                                                                <input placeholder="0000000000000" class="span12" type="text" name="rg" id="rg" required />
                                                             </div>
                                                             <div class="span3">
                                                                 <label class="req">Orgão Expedidor (RG)</label>
-                                                                <input placeholder="SSP" class="span12" type="text" name="orgExped" id="orgExped" />
+                                                                <input placeholder="SSP" class="span12" type="text" name="orgExped" id="orgExped" required />
                                                             </div>
                                                             <div class="span3">
                                                                 <label class="req">Unidade Federativa:</label>
-                                                                <select name="val1_sport" id="val1_sport" class="span12">
+                                                                <select name="val1_sport" id="val1_sport" class="span12" required >
                                                                     <option></option>
                                                                     <option value="option1">CE</option>
                                                                     <option value="option2">SP</option>
@@ -82,11 +82,11 @@
                                                         <div class="row-fluid">
                                                             <div class="span3">
                                                                 <label class="req">Data de Nascimento:</label>
-                                                                <input type="text" id="mask_date" class="span12" name="dataNasc"  />
+                                                                <input type="text" id="mask_date" class="span12" name="dataNasc" required />
                                                             </div>
                                                             <div class="span3">
                                                                 <label class="req">Sexo:</label>
-                                                                <select name="val1_sport" id="val1_sport" class="span12">
+                                                                <select name="val1_sport" id="val1_sport" class="span12" required >
                                                                     <option></option>
                                                                     <option value="M">Masculino</option>
                                                                     <option value="F">Feminino</option>
@@ -94,7 +94,7 @@
                                                             </div>
                                                             <div class="span3">
                                                                 <label class="req">Estado Civil:</label>
-                                                                <select name="val1_sport" id="val1_sport" class="span12">
+                                                                <select name="estCivil" id="estCivil" class="span12" required >
                                                                     <option></option>
                                                                     <option value="S">Solteiro</option>
                                                                     <option value="D">Disvorciado</option>
@@ -107,15 +107,15 @@
                                                         <div class="row-fluid">
                                                             <div class="span3">
                                                                 <label class="req">Nome do Contato:</label>
-                                                                <input class="span12" type="text" name="contato" id="contato" />
+                                                                <input class="span12" type="text" name="contato" id="contato" required />
                                                             </div>
                                                             <div class="span2">
                                                                 <label>Inadimplente:</label>
-                                                                <input class="span12" type="text" name="inad" id="inad" placeholder="Sim" disabled />
+                                                                <input class="span12" type="text" name="inad" id="inad" value="Sim" disabled />
                                                             </div>
                                                             <div class="span2">
                                                                 <label class="req">Empresa:</label>
-                                                                <input class="span12" type="text" name="empresa" id="empresa"  />
+                                                                <input class="span12" type="text" name="empresa" id="empresa" required />
                                                             </div>
                                                             <div class="span3">
                                                                 <label class="req">Cliente desde:</label>
