@@ -111,7 +111,6 @@ $mTitle = new MudaTitulo;
                                                     <button type="submit" class="btn-success span3">Cadastrar</button>
                                                     <button type="submit" class="btn-danger span3">Cancelar</button>
                                                 </div>
-
                                             </div>
                                         </div>	
                                     </div> 

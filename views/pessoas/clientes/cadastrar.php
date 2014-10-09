@@ -59,7 +59,7 @@
                                                         <div class="row-fluid">
                                                             <div class="span3">
                                                                 <label class="req">CPF:</label>
-                                                                <input placeholder="00000000000" class="span12" type="text" name="cpf" id="cpf" />
+                                                                <input class="span12" type="text" name="cpf" id="mask_cpf" />
                                                             </div>
                                                             <div class="span3">
                                                                 <label class="req">RG:</label>
@@ -82,7 +82,7 @@
                                                         <div class="row-fluid">
                                                             <div class="span3">
                                                                 <label class="req">Data de Nascimento:</label>
-                                                                <input placeholder="00/00/0000" class="span12" type="text" name="cpf" id="cpf" />
+                                                                <input type="text" id="mask_date" class="span12" name="dataNasc"  />
                                                             </div>
                                                             <div class="span3">
                                                                 <label class="req">Sexo:</label>

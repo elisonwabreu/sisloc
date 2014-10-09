@@ -149,8 +149,8 @@
                                                             <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 180px; max-height: 180px; line-height: 20px;"></div>
                                                             <div>
                                                                 <span class="btn btn-small btn-file span12"><span class="fileupload-new">Selecinar Foto</span>
-                                                                <span class="fileupload-exists span6">Mudar</span><input type="file"></span>
-                                                                <a href="#" class="btn fileupload-exists span6" data-dismiss="fileupload">Remover</a>
+                                                                <span class="fileupload-exists span3">Mudar</span><input type="file"></span>
+                                                                <a href="#" class="btn fileupload-exists span3" data-dismiss="fileupload">Remover</a>
                                                             </div>
                                                         </div>
                                                     </div>
