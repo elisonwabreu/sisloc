@@ -106,14 +106,13 @@ $mTitle = new MudaTitulo;
                                                     <textarea class="span12" rows="5"></textarea>
                                                 </div>
                                             </div>
-                                            <div class="row-fluid">
-                                                <div class="span6">
-                                                    <button type="submit" class="btn-success span3">Cadastrar</button>
-                                                    <button type="submit" class="btn-danger span3">Cancelar</button>
+                                                <div class="formSep">
+                                                    <button type="submit" class="btn-success">Cadastrar</button>
+                                                    <button type="submit" class="btn-danger">Cancelar</button>
                                                 </div>
 
-                                            </div>
                                         </div>	
+                                </form>
                                     </div> 
                             </div><!-- fim das informações pessoais -->                                        
 
