@@ -1,5 +1,5 @@
 <?php 
-    //classe responsavel pela mudança automatica do titulo dos modulos
+    //classe responsavel pela mudan�a automatica do titulo dos modulos
     require 'MudaTitulo.php';
     $mTitle = new MudaTitulo;
 ?>
@@ -8,7 +8,7 @@
                     <div class="span12">
                         <div class="w-box">
                             <div class="w-box-header">
-                                <h4><?php $mTitle->trocarTitulo($_GET['url'], $_GET['modulo']);//realiza a mudança do titulo automaticamente ?></h4>
+                                <h4><?php $mTitle->trocarTitulo($_GET['url'], $_GET['modulo']);//realiza a mudan�a do titulo automaticamente ?></h4>
                             </div>
                             <div class="w-box-content cnt_b">
                                 <div class="tabbable tabbable-bordered">
@@ -17,7 +17,7 @@
                                         <li><a data-toggle="tab" href="#endereco">Endereço</a></li>
                                         <li><a data-toggle="tab" href="#oldInfo">Outras Informações</a></li>
                                     </ul>
-                                    <div class="tab-content"><!-- informações pessoais -->
+                                    <div class="tab-content"><!-- informa��es pessoais -->
                                         <div id="infP" class="tab-pane active">
                                             
                                             <form id="validate_field_types" action="" method="post">
@@ -157,21 +157,21 @@
                                                 </div>	
                                                 <div class="formSep">
                                                     <button type="submit" class="btn-success">Cadastrar</button>
-                                                    <button type="submit" class="btn-danger">Cancelar</button
+                                                    <button type="submit" class="btn-danger">Cancelar</button>
                                                 </div>
                                             </form>
 
-                                        </div><!-- fim das informações pessoais -->                                        
-                                        <div id="endereco" class="tab-pane"><!-- Outras Informações -->
+                                        </div><!-- fim das Informacoes pessoais -->                                        
+                                        <div id="endereco" class="tab-pane"><!-- Outras Informacoes -->
                                         
 
                                         
-                                        </div><!-- Fim Endereço -->
-                                        <div id="oldInfo" class="tab-pane"><!-- Fim Outras Informações -->
+                                        </div><!-- Fim Endereco -->
+                                        <div id="oldInfo" class="tab-pane"><!-- Fim Outras Informacoes -->
                                         
 
-                                        
-                                        </div><!-- Fim Endereço -->
+                                        </form><!-- Fim do formulario -->
+                                        </div><!-- Fim Endereco -->
                                     </div>
                                 </div>
                             </div>   
