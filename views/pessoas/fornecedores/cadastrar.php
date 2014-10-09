@@ -110,22 +110,24 @@
                                                 <div class="row-fluid">
                                                 <div class="span6">
                                                     <button type="submit" class="btn-success span3">Cadastrar</button>
-                                                    <button type="submit" class="btn-danger span3">Cancelar</button
+                                                    <button type="submit" class="btn-danger span3">Cancelar</button>
                                                 </div>
                                                                                                 
                                                 </div>
-                                            </form>
-
-                                        </div><!-- fim das informações pessoais -->                                        
-                                        <div id="endereco" class="tab-pane"><!-- Outras Informações -->
                                             
 
+                                        </div><!-- fim das informações pessoais -->                                        
+                                         
+                                        <div class="tab-pane" id="endereco" ><!-- Outras Informações -->
+                                            
+                                                    teste
                                         
                                         </div><!-- Fim Endereço -->
+                                         
                                         <div id="oldInfo" class="tab-pane"><!-- Fim Outras Informações -->
                                         
 
-                                        
+                                        </form>
                                         </div><!-- Fim Endereço -->
                                     </div>
                                 </div>
