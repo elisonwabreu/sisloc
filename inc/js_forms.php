@@ -46,8 +46,17 @@
             <script type="text/javascript" src="assets/js/lib/plupload/js/jquery.plupload.queue/jquery.plupload.queue.js"></script>
         <!-- WYSIWG Editor -->
             <script src="assets/js/lib/ckeditor/ckeditor.js"></script>
+        <!-- jQuery validation -->
+            <script src="assets/js/lib/jquery-validation/jquery.validate.min.js"></script>  
+            <script src="assets/js/pages/beoro_form_validation.js"></script>
         
             <script src="assets/js/pages/beoro_form_elements.js"></script>
+            
+            <script>
+                 $(document).ready(function(){
+                        $('input').css('text-transform','uppercase');
+                });
+            </script>
             
             
             
