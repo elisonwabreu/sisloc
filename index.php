@@ -71,7 +71,7 @@
                                                 <li><a href="?modulo=pessoas/clientes&url=cadastrar">Clientes</a></li>
                                                 <li><a href="?modulo=pessoas/fornecedores&url=cadastrar">Fornecedores</a></li>
                                                 <li><a href="?modulo=pessoas/empresas&url=listar">Empresas</a></li>
-                                                <li><a href="?modulo=pessoas/funcionarios&url=listar">Funcinários</a></li>
+                                                <li><a href="?modulo=pessoas/funcionarios&url=cadastrar">Funcinários</a></li>
                                                 <li><a href="?modulo=pessoas/org_patro&url=listar">Organizadores / Patrocinadores</a></li>
                                                 <li><a href="?modulo=pessoas/agenda_contatos&url=listar">Agenda de Contatos</a></li>
                                                 <li><a href="?modulo=pessoas/cargos&url=listar">Cargos</a></li>
