@@ -8,7 +8,7 @@ $mTitle = new MudaTitulo;
         <div class="span12">
             <div class="w-box">
                 <div class="w-box-header">
-                    <h4><?php $mTitle->trocarTitulo($_GET['url'], $_GET['modulo']); //realiza a mudança do titulo automaticamente   ?></h4>
+                    <h4><?php $mTitle->trocarTitulo($_GET['url'], $_GET['modulo']); //realiza a mudança do titulo automaticamente    ?></h4>
                 </div>
                 <div class="w-box-content cnt_b">
                     <div class="tabbable tabbable-bordered">
@@ -59,7 +59,7 @@ $mTitle = new MudaTitulo;
                                             <div class="row-fluid">
                                                 <div class="span3">
                                                     <label class="req">CNPJ:</label>
-                                                    <input placeholder="00000000000" class="span12" type="text" name="cpf" id="cnpj" />
+                                                    <input placeholder="00000000000" class="span12" type="text" name="cpf" id="mask_cnpj" />
                                                 </div>
                                                 <div class="span3">
                                                     <label class="req">IE:</label>
@@ -84,6 +84,10 @@ $mTitle = new MudaTitulo;
                                                     <label class="req">Contato:</label>
                                                     <input placeholder="Rsponsável" class="span12" type="text" name="cpf" id="contato" />
                                                 </div>
+                                                <div class="span2">
+                                                    <label class="req">Telefone:</label>
+                                                    <input  class="span12" type="text" name="telefone" id="mask_phone" />
+                                                </div>
                                                 <div class="span3">
                                                     <label class="req">Tipo de Fornecedor:</label>
                                                     <select name="val1_sport" id="val1_sport" class="span12"  >
@@ -106,37 +110,33 @@ $mTitle = new MudaTitulo;
                                                     <textarea class="span12" rows="5"></textarea>
                                                 </div>
                                             </div>
-                                                <div class="formSep">
-                                                    <button type="submit" class="btn-success">Cadastrar</button>
-                                                    <button type="submit" class="btn-danger">Cancelar</button>
-                                                </div>
 
                                         </div>	
-                                </form>
+
                                     </div> 
                             </div><!-- fim das informações pessoais -->                                        
 
                             <div class="tab-pane" id="endereco" ><!-- Outras Informações -->
-                          <!-- ------------------------ Incio do cad enderco ----------------------------------------------------- -->                
+                                <!-- ------------------------ Incio do cad enderco ----------------------------------------------------- -->                
                                 <div class="formSep">
                                     <div class="span12">
                                         <div class="row-fluid"> 
-                                                <div class="span2">                                      
-                                                    <label class="req">CEP:</label>
-                                                    <input class="span12" type="text" name="ceps" id="id" />
-                                                </div><!-- FIM do CEP  -->
-                                                <div class="span5"><!-- Incio do Endereco  -->
-                                                    <label class="req">Endereço:</label>
-                                                    <input class="span12" type="text" name="endereco" id="id" />
-                                                </div><!-- Incio do Endereco  -->
-                                                <div class="span1"><!-- Incio do Num  -->
-                                                    <label class="req">Numero:</label>
-                                                    <input class="span12" type="text" name="num" id="id" />
-                                                </div><!-- Incio do Num  -->
-                                                <div class="span4"><!-- Incio do Num  -->
-                                                    <label class="req">Complemento:</label>
-                                                    <input class="span12" type="text" name="complemento" id="id" />
-                                                </div><!-- Incio do Num  -->
+                                            <div class="span2">                                      
+                                                <label class="req">CEP:</label>
+                                                <input class="span12" type="text" name="ceps" id="mask_cep" />
+                                            </div><!-- FIM do CEP  -->
+                                            <div class="span5"><!-- Incio do Endereco  -->
+                                                <label class="req">Endereço:</label>
+                                                <input class="span12" type="text" name="endereco" id="id" />
+                                            </div><!-- Incio do Endereco  -->
+                                            <div class="span1"><!-- Incio do Num  -->
+                                                <label class="req">Numero:</label>
+                                                <input class="span12" type="text" name="num" id="mask_numeros" />
+                                            </div><!-- Incio do Num  -->
+                                            <div class="span4"><!-- Incio do Num  -->
+                                                <label class="req">Complemento:</label>
+                                                <input class="span12" type="text" name="complemento" id="id" />
+                                            </div><!-- Incio do Num  -->
                                             <div class="row-fluid">
                                                 <div class="span2"><!-- Incio do Num  -->
                                                     <label class="req">Cidade:</label>
@@ -147,18 +147,56 @@ $mTitle = new MudaTitulo;
                                                     <input class="span12" type="text" name="bairro" id="id" />
                                                 </div><!-- Incio do Num  -->
                                             </div>
+                                            <div class="row-fluid">
+                                                <div class="span12">
+                                                    <label>Dados complementares:</label>
+                                                    <textarea class="span12" rows="5" cols="60"> </textarea>
+                                                </div>
+                                            </div>    
                                         </div>
-                                        </div>
-                                        </div>
+                                    </div>
+                                </div>
 
 
                             </div><!-- Fim Endereço -->
 
                             <div id="oldInfo" class="tab-pane"><!-- Fim Outras Informações -->
+                                <div class="formSep">
+                                    <div class="span12">
+                                        <div class="row-fluid"> 
+                                            <div class="span1">                                      
+                                                <label class="">Banco:</label>
+                                                <input class="span12" type="text" name="banco" id="id" />
+                                            </div>
+                                            <div class="span5"><!-- Incio do Endereco  -->
+                                                <label class="">Nome:</label>
+                                                <input class="span12" type="text" name="nomeBanco" id="id" />
+                                            </div><!-- Incio do Endereco  -->
+                                            <div class="span1"><!-- Incio do Num  -->
+                                                <label class="">Agência:</label>
+                                                <input class="span12" type="text" name="agencia" id="id" />
+                                            </div><!-- Incio do Num  -->
+                                            <div class="span2"><!-- Incio do Num  -->
+                                                <label class="">Conta:</label>
+                                                <input class="span12" type="text" name="conta" id="id" />
+                                            </div><!-- Incio do Num  -->
+                                            <div class="span1"><!-- Incio do Num  -->
+                                                <label class="">Dígito:</label>
+                                                <input class="span12" type="text" name="digito" id="id" />
+                                            </div><!-- Incio do Num  -->
+
+                                        </div>
+                                    </div>
+                                </div>
 
 
-                                </form>
                             </div><!-- Fim Endereço -->
+                            <div class="formSep">
+                                <button type="submit" class="btn-success">Cadastrar</button>
+                                <button type="submit" class="btn-danger">Cancelar</button>
+                            </div>
+
+                            </form>
                         </div>
                     </div>
                 </div>   

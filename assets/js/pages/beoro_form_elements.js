@@ -211,12 +211,16 @@
     //* masked inputs
     beoro_maskedInputs = {
         init: function() {
-            $("#mask_date").inputmask("d/m/y",{ "placeholder": "dd/mm/yyyy" });
-            $("#mask_phone").inputmask("mask", {"mask": "(999) 999-9999"});
+            $("#mask_date").inputmask("dd/mm/yyyy",{ "placeholder": "dd/mm/yyyy" });
+            $("#mask_phone").inputmask("mask", {"mask": "(999) 9999-9999"});
             $("#mask_product").inputmask({"mask": "AA-999999a"});
-            $("#mask_numeric").inputmask('€ 999.999,99', { numericInput: false });
+            $("#mask_cep").inputmask({"mask": "99999-999"});
+            $("#mask_cpf").inputmask({"mask": "999.999.999-99"});
+            $("#mask_cnpj").inputmask({"mask": "99.999.999/9999-99"});
+            $("#mask_numeric").inputmask('R$ 999.999,99', { numericInput: false });
+            $("#mask_numeros").inputmask('999999', { numericInput: false});
             $("#mask_mac").inputmask({"mask": "**:**:**:**:**:**"});
-            $("#mask_callback").inputmask("d/m/y",{ "placeholder": "dd/mm/yyyy", "oncomplete": function(){ alert('Date entered: '+$(this).val()); } });
+            $("#mask_callback").inputmask("dd/mm/yyyy",{ "placeholder": "dd/mm/yyyy", "oncomplete": function(){ alert('Date entered: '+$(this).val()); } });
         }
     };
 
