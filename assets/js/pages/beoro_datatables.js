@@ -34,8 +34,8 @@
         },
         //* column reorder & toggle visibility
         colReorder_visibility: function() {
-            if($('#dt_colVis_Reorder').length) {
-                $('#dt_colVis_Reorder').dataTable({
+            if($('.dataTableListagemDt_colVis_Reorder').length) {
+                $('.dataTableListagemDt_colVis_Reorder').dataTable({
                     "sPaginationType": "bootstrap",
                     "sDom": "R<'dt-top-row'Clf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row-fluid'ip>",
                     "fnInitComplete": function(oSettings, json) {
