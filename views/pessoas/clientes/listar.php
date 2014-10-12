@@ -19,9 +19,9 @@
                                     <div class="tab-content"><!-- Listagem de pessoa fisica -->
                                         <div id="pf" class="tab-pane active">
                                             <ul class="ico-list">
-                                                <li><a href="#" alt="Cadastrar" title="Cadastrar"><i class="splashy-add"></i></a></li>
-                                                <li><a href="#" alt="Editar" title="Editar"><i class="splashy-pencil"></i></a></li>
-                                                <li><a href="#" alt="Excluir" title="Excluir"><i class="splashy-error_x"></i></a></li>
+                                                <li><a href="?modulo=pessoas/clientes&url=cadastrar" alt="Novo Cliente" title="Novo Cliente"><i class="splashy-add"></i></a></li>
+                                                <li><a href="?modulo=pessoas/clientes&url=editar" alt="Editar Cliente" title="Editar Cliente"><i class="splashy-pencil"></i></a></li>
+                                                <li><a href="#" alt="Excluir Cliente" title="Excluir Cliente"><i class="splashy-error_x"></i></a></li>
                                             </ul>
                                             <!-- DATATABLES -->    
                                             <div class="w-box w-box-blue">
@@ -29,7 +29,7 @@
                                                     <h4>Listagem Pessoa Física</h4>
                                                 </div>
                                                 <div class="w-box-content">
-                                                    <table id="dt_colVis_Reorder" class="table table-striped table-condensed">
+                                                    <table class="table table-striped table-condensed dataTableListagemDt_colVis_Reorder">
                                                     <thead>
                                                         <tr>
                                                             <th>id</th>
@@ -312,7 +312,7 @@
                                                     <h4>Listagem Pessoa Juridica</h4>
                                                 </div>
                                                 <div class="w-box-content">
-                                                    <table id="dt_colVis_Reorder2" class="table table-striped table-condensed">
+                                                    <table class="table table-striped table-condensed dataTableListagemDt_colVis_Reorder">
                                                     <thead>
                                                         <tr>
                                                             <th>id</th>

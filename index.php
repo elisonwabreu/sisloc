@@ -68,8 +68,8 @@
                                         <li>
                                             <a href="#">Pessoas</a>
                                             <ul>
-                                                <li><a href="?modulo=pessoas/clientes&url=cadastrar">Clientes</a></li>
-                                                <li><a href="?modulo=pessoas/fornecedores&url=cadastrar">Fornecedores</a></li>
+                                                <li><a href="?modulo=pessoas/clientes&url=listar">Clientes</a></li>
+                                                <li><a href="?modulo=pessoas/fornecedores&url=listar">Fornecedores</a></li>
                                                 <li><a href="?modulo=pessoas/empresas&url=listar">Empresas</a></li>
                                                 <li><a href="?modulo=pessoas/funcionarios&url=listar">Funcinários</a></li>
                                                 <li><a href="?modulo=pessoas/org_patro&url=listar">Organizadores / Patrocinadores</a></li>
