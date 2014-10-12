@@ -117,8 +117,40 @@ $mTitle = new MudaTitulo;
                             </div><!-- fim das informações pessoais -->                                        
 
                             <div class="tab-pane" id="endereco" ><!-- Outras Informações -->
+                          <!-- ------------------------ Incio do cad enderco ----------------------------------------------------- -->                
+                                <div class="formSep">
+                                    <div class="span12">
+                                        <div class="row-fluid"> 
+                                                <div class="span2">                                      
+                                                    <label class="req">CEP:</label>
+                                                    <input class="span12" type="text" name="ceps" id="id" />
+                                                </div><!-- FIM do CEP  -->
+                                                <div class="span5"><!-- Incio do Endereco  -->
+                                                    <label class="req">Endereço:</label>
+                                                    <input class="span12" type="text" name="endereco" id="id" />
+                                                </div><!-- Incio do Endereco  -->
+                                                <div class="span1"><!-- Incio do Num  -->
+                                                    <label class="req">Numero:</label>
+                                                    <input class="span12" type="text" name="num" id="id" />
+                                                </div><!-- Incio do Num  -->
+                                                <div class="span4"><!-- Incio do Num  -->
+                                                    <label class="req">Complemento:</label>
+                                                    <input class="span12" type="text" name="complemento" id="id" />
+                                                </div><!-- Incio do Num  -->
+                                            <div class="row-fluid">
+                                                <div class="span2"><!-- Incio do Num  -->
+                                                    <label class="req">Cidade:</label>
+                                                    <input class="span12" type="text" name="cidade" id="id" />
+                                                </div><!-- Incio do Num  -->
+                                                <div class="span2"><!-- Incio do Num  -->
+                                                    <label class="req">Bairro:</label>
+                                                    <input class="span12" type="text" name="bairro" id="id" />
+                                                </div><!-- Incio do Num  -->
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
 
-                                teste
 
                             </div><!-- Fim Endereço -->
 
