@@ -216,6 +216,7 @@
             $(".mask_product").inputmask({"mask": "AA-999999a"});
             $(".mask_cep").inputmask({"mask": "99999-999"});
             $(".mask_cpf").inputmask({"mask": "999.999.999-99"});
+            $(".mask_pis").inputmask({"mask": "999.9999.999-9"});
             $(".mask_cnpj").inputmask({"mask": "99.999.999/9999-99"});
             $(".mask_numeric").inputmask('R$ 999.999,99', { numericInput: false });
             $(".mask_numeros").inputmask('999999', { numericInput: false});
