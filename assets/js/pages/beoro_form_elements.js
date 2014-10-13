@@ -444,6 +444,24 @@
                     'displayFormat' : '#input/#max | #words words'
                 })
             }
+            if($('.limit500').length) {
+                $('.limit500').textareaCount({
+                    'maxCharacterSize': 500,
+                    'originalStyle': 'originalTextareaInfo',
+                    'warningStyle' : 'warningTextareaInfo',
+                    'warningNumber': 40,
+                    'displayFormat' : '#input/#max | #words words'
+                })
+            }
+            if($('.limit250').length) {
+                $('.limit250').textareaCount({
+                    'maxCharacterSize': 250,
+                    'originalStyle': 'originalTextareaInfo',
+                    'warningStyle' : 'warningTextareaInfo',
+                    'warningNumber': 40,
+                    'displayFormat' : '#input/#max | #words words'
+                })
+            }
         }
     };
 
