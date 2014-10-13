@@ -28,7 +28,7 @@ $mTitle = new MudaTitulo;
                                                     <input class="span12" type="text" name="id" id="id" value="000000" disabled />
                                                 </div>
                                                 <div class="span2">
-                                                    <label class="req">Tipo de Pessoa:</label>
+                                                    <label class="req">Pessoa:</label>
                                                     <select name="tipoPessoa" id="tipoPessoa" class="span12">
                                                         <option value="pf">Física</option>
                                                         <option value="pj">Juridica</option>
@@ -204,7 +204,7 @@ $mTitle = new MudaTitulo;
                                                        data-placement="bottom" data-trigger="hover" type="text" name="endereco" id="id" required />
                                             </div><!-- Incio do Endereco  -->
                                             <div class="span1"><!-- Incio do Num  -->
-                                                <label class="req">Número:</label>
+                                                <label class="req">Núm:</label>
                                                 <input class="span12 pop-over mask_numeros" data-title="Número" data-content="Informe o número da residência." 
                                                        data-placement="bottom" data-trigger="hover" type="text" name="num" id="" required />
                                             </div><!-- Incio do Num  -->
@@ -213,6 +213,7 @@ $mTitle = new MudaTitulo;
                                                 <input class="span12 pop-over" data-title="Complemento" data-content="Informe o complemento da residência." 
                                                        data-placement="bottom" data-trigger="hover" type="text" name="complemento" id="id" />
                                             </div><!-- Incio do Num  -->
+                                            </div>
                                             <div class="row-fluid">
                                                 <div class="span2"><!-- Incio do Num  -->
                                                     <label class="req">Cidade:</label>
@@ -233,7 +234,7 @@ $mTitle = new MudaTitulo;
                                                 </div>
                                             </div>    
                                         </div>
-                                    </div>
+                                    
                                 </div>
 
                             </div><!-- Fim Endereco -->
