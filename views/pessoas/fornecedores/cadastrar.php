@@ -110,20 +110,14 @@ $mTitle = new MudaTitulo;
                                             <div class="row-fluid">
                                                 <div class="span6">
                                                     <label class="">Observação:</label>
-<<<<<<< HEAD
-                                                    <textarea class="span12 pop-over limit500" data-title="Observação" data-content="Limite máx. 500 caracteres." 
-=======
+
                                                     <textarea class="span12 limit250 pop-over" data-title="Observação" data-content="Limite máx. 250 caracteres." 
->>>>>>> origin/master
                                                               data-placement="bottom" data-trigger="hover" rows="5"></textarea>
                                                 </div>
                                                 <div class="span6">
                                                     <label class="">Informações Adicionais:</label>
-<<<<<<< HEAD
+
                                                     <textarea class="span12 pop-over limit500" data-title="Informações Adicionais" data-content="Limite máx. 500 caracteres." 
-=======
-                                                    <textarea class="span12 limit500 pop-over" data-title="Informações Adicionais" data-content="Limite máx. 500 caracteres." 
->>>>>>> origin/master
                                                               data-placement="bottom" data-trigger="hover" rows="5"></textarea>
                                                 </div>
                                             </div>
