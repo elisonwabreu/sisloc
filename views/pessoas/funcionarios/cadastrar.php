@@ -61,7 +61,7 @@ $mTitle = new MudaTitulo;
                                                            data-title="Orgão Expedidor (RG)" data-placement="bottom" data-trigger="hover" type="text" name="orgExped" id="orgExped" required />
                                                 </div>
                                                 <div class="span2">
-                                                    <label class="req">Data de Nascimento:</label>
+                                                    <label class="req">Data Nasc:</label>
                                                     <input type="text" class="span12 pop-over mask_date" 
                                                            data-content="Digite aqui a data de nascimento do Funcionário. Digite apenas números. Ex.: 01052000" 
                                                            data-title="Data de Nascimento" data-placement="bottom" data-trigger="hover" name="dataNasc" required />
