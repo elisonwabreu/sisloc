@@ -173,7 +173,6 @@ $mTitle = new MudaTitulo;
                                     </div>
                                 </div>
 
-
                             </div><!-- Fim Endereço -->
 
                             <div id="oldInfo" class="tab-pane"><!-- Fim Outras Informações -->

@@ -8,14 +8,13 @@ $mTitle = new MudaTitulo;
         <div class="span12">
             <div class="w-box">
                 <div class="w-box-header">
-                    <h4><?php $mTitle->trocarTitulo($_GET['url'], $_GET['modulo']); //realiza a mudan�a do titulo automaticamente   ?></h4>
+                    <h4><?php $mTitle->trocarTitulo($_GET['url'], $_GET['modulo']); //realiza a mudan�a do titulo automaticamente     ?></h4>
                 </div>
                 <div class="w-box-content cnt_b">
                     <div class="tabbable tabbable-bordered">
                         <ul class="nav nav-tabs">
                             <li class="active"><a data-toggle="tab" href="#infP">Informações Pessoais</a></li>
                             <li><a data-toggle="tab" href="#endereco">Endereço</a></li>
-                            <li><a data-toggle="tab" href="#oldInfo">Outras Informações</a></li>
                         </ul>
                         <div class="tab-content"><!-- informa��es pessoais -->
                             <div id="infP" class="tab-pane active">
@@ -28,16 +27,20 @@ $mTitle = new MudaTitulo;
                                                     <label class="req">Cód:</label>
                                                     <input class="span12" type="text" name="id" id="id" value="000000" disabled />
                                                 </div>
-                                                <div class="span4">                                                   
-                                                    <label class="req">Nome Completo:</label>
-                                                    <input class="span12 pop-over" data-content="Um Dois Tres de Oliveira Quatro" data-title="Nome Completo" data-placement="bottom" data-trigger="hover" type="text" name="nome" id="nome" required />
-                                                </div>
                                                 <div class="span2">
                                                     <label class="req">Tipo de Pessoa:</label>
                                                     <select name="tipoPessoa" id="tipoPessoa" class="span12">
-                                                        <option value="option1">Física</option>
-                                                        <option value="option2">Juridica</option>
+                                                        <option value="pf">Física</option>
+                                                        <option value="pj">Juridica</option>
                                                     </select>
+                                                </div>
+                                                <div class="span4 pf">                                                   
+                                                    <label class="req">Nome Completo:</label>
+                                                    <input class="span12 pop-over" data-content="Um Dois Tres de Oliveira Quatro" data-title="Nome Completo" data-placement="bottom" data-trigger="hover" type="text" name="nome" id="nome" required />
+                                                </div>
+                                                <div class="span4 pj">                                                   
+                                                    <label class="req">Razão Social:</label>
+                                                    <input class="span12 pop-over" data-content="Um Dois Tres de Oliveira Quatro ME" data-title="Razão Social" data-placement="bottom" data-trigger="hover" type="text" name="nome" id="nome" required />
                                                 </div>
                                                 <div class="span2">
                                                     <label class="req">Status:</label>
@@ -56,7 +59,7 @@ $mTitle = new MudaTitulo;
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="row-fluid">
+                                            <div class="row-fluid pf">
                                                 <div class="span3">
                                                     <label class="req">CPF:</label>
                                                     <input class="span12 mask_cpf pop-over" data-content="Digite aqui o número CPF do cliente. Digite apenas números." data-title="CPF do Cliente" data-placement="bottom" data-trigger="hover" type="text" name="cpf" required />
@@ -79,7 +82,30 @@ $mTitle = new MudaTitulo;
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="row-fluid">
+                                            <div class="row-fluid pj">
+                                                <div class="span3">
+                                                    <label class="req">CNPJ:</label>
+                                                    <input class="span12 mask_cnpj pop-over" data-content="Digite aqui o número CNPJ do cliente. Digite apenas números." data-title="CPF do Cliente" data-placement="bottom" data-trigger="hover" type="text" name="cpf" required />
+                                                </div>
+                                                <div class="span3">
+                                                    <label class="req">IE:</label>
+                                                    <input class="span12 pop-over" data-content="Digite aqui o número inscrição estadual do cliente. Digite apenas números." data-title="Inscrição Estadual" data-placement="bottom" data-trigger="hover" type="text" name="ie" id="ie" />
+                                                </div>
+                                                <div class="span3">                                                   
+                                                    <label class="req">Nome Fantasia:</label>
+                                                    <input class="span12 pop-over" data-content="Marcas e modelos LTDA" data-title="Nome Fantasia" data-placement="bottom" data-trigger="hover" type="text" name="nome" id="nome" required />
+                                                </div>
+                                                <div class="span3">
+                                                    <label class="req">Unidade Federativa:</label>
+                                                    <select name="val1_sport" id="val1_sport" class="span12" required >
+                                                        <option></option>
+                                                        <option value="option1">CE</option>
+                                                        <option value="option2">SP</option>
+                                                        <option value="option3">RJ</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid pf">
                                                 <div class="span3">
                                                     <label class="req">Data de Nascimento:</label>
                                                     <input type="text" class="span12 mask_date pop-over" data-content="Digite aqui a data de nascimento do cliente. Digite apenas números. Ex.: 01052000" data-title="Data de Nascimento" data-placement="bottom" data-trigger="hover" name="dataNasc" required />
@@ -102,6 +128,12 @@ $mTitle = new MudaTitulo;
                                                         <option value="U">União Estavél</option>
                                                         <option value="V">Viúvo</option>
                                                     </select>
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid pj">
+                                                <div class="span3">
+                                                    <label class="req">Data de Fundação:</label>
+                                                    <input type="text" class="span12 mask_date pop-over" data-content="Digite aqui a data de fundação da empresa. Digite apenas números. Ex.: 01052000" data-title="Data de Fundação" data-placement="bottom" data-trigger="hover" name="dataFund" required />
                                                 </div>
                                             </div>
                                             <div class="row-fluid">
@@ -157,50 +189,52 @@ $mTitle = new MudaTitulo;
 
                             </div><!-- fim das Informacoes pessoais -->                                        
                             <div id="endereco" class="tab-pane"><!-- Outras Informacoes -->
-
+                                <!-- ------------------------ Incio do cad enderco ----------------------------------------------------- -->                
                                 <div class="formSep">
                                     <div class="span12">
                                         <div class="row-fluid"> 
                                             <div class="span2">                                      
                                                 <label class="req">CEP:</label>
-                                                <input class="span12 mask_cep" type="text" name="ceps" required />
+                                                <input class="span12 pop-over mask_cep" data-title="CEP" data-content="informe um CEP válido." 
+                                                       data-placement="bottom" data-trigger="hover" type="text" name="ceps" id="" required />
                                             </div><!-- FIM do CEP  -->
                                             <div class="span5"><!-- Incio do Endereco  -->
                                                 <label class="req">Endereço:</label>
-                                                <input class="span12" type="text" name="endereco" id="id" />
+                                                <input class="span12 pop-over" data-title="Endereço" data-content="Informe o endereço do cliente." 
+                                                       data-placement="bottom" data-trigger="hover" type="text" name="endereco" id="id" required />
                                             </div><!-- Incio do Endereco  -->
                                             <div class="span1"><!-- Incio do Num  -->
-                                                <label class="req">Numero:</label>
-                                                <input class="span12 mask_numeros" type="text" name="num"  />
+                                                <label class="req">Número:</label>
+                                                <input class="span12 pop-over mask_numeros" data-title="Número" data-content="Informe o número da residência." 
+                                                       data-placement="bottom" data-trigger="hover" type="text" name="num" id="" required />
                                             </div><!-- Incio do Num  -->
                                             <div class="span4"><!-- Incio do Num  -->
-                                                <label class="req">Complemento:</label>
-                                                <input class="span12" type="text" name="complemento" id="id" />
+                                                <label class="">Complemento:</label>
+                                                <input class="span12 pop-over" data-title="Complemento" data-content="Informe o complemento da residência." 
+                                                       data-placement="bottom" data-trigger="hover" type="text" name="complemento" id="id" />
                                             </div><!-- Incio do Num  -->
                                             <div class="row-fluid">
                                                 <div class="span2"><!-- Incio do Num  -->
                                                     <label class="req">Cidade:</label>
-                                                    <input class="span12" type="text" name="cidade" id="id" />
+                                                    <input class="span12 pop-over" data-title="Cidade" data-content="Informe a cidade a qual a empresa pertence." 
+                                                           data-placement="bottom" data-trigger="hover" type="text" name="cidade" id="id" required />
                                                 </div><!-- Incio do Num  -->
                                                 <div class="span2"><!-- Incio do Num  -->
                                                     <label class="req">Bairro:</label>
-                                                    <input class="span12" type="text" name="bairro" id="id" />
+                                                    <input class="span12 pop-over" data-title="Bairro" data-content="Informe o bairro ao qual a empresa está situada." 
+                                                           data-placement="bottom" data-trigger="hover" type="text" name="bairro" id="id" required />
                                                 </div><!-- Incio do Num  -->
                                             </div>
                                             <div class="row-fluid">
                                                 <div class="span12">
                                                     <label>Dados complementares:</label>
-                                                    <textarea class="span12" rows="5" cols="60"> </textarea>
+                                                    <textarea class="span12 pop-over" data-title="Complemento" data-content="Insira alguma informação que possa ser importante ao cliente." 
+                                                              data-placement="bottom" data-trigger="hover" rows="5" cols="60"> </textarea>
                                                 </div>
                                             </div>    
                                         </div>
                                     </div>
                                 </div>
-
-                            </div><!-- Fim Endereco -->
-                            <div id="oldInfo" class="tab-pane"><!-- Fim Outras Informacoes -->
-
-
 
                             </div><!-- Fim Endereco -->
                             <div class="formSep">
