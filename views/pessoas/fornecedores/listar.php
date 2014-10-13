@@ -19,9 +19,9 @@
                                     <div class="tab-content"><!-- Listagem de pessoa fisica -->
                                         <div id="pf" class="tab-pane active">
                                             <ul class="ico-list">
-                                                <li><a href="?modulo=pessoas/fornecedores&url=listar" alt="Novo Cliente" title="Novo Cliente"><i class="splashy-add"></i></a></li>
-                                                <li><a href="?modulo=pessoas/fornecedores&url=editar" alt="Editar Cliente" title="Editar Cliente"><i class="splashy-pencil"></i></a></li>
-                                                <li><a href="#" alt="Excluir Cliente" title="Excluir Cliente"><i class="splashy-error_x"></i></a></li>
+                                                <li><a href="?modulo=pessoas/fornecedores&url=cadastrar" alt="Novo fornecedor" title="Novo fornecedor"><i class="splashy-add"></i></a></li>
+                                                <li><a href="?modulo=pessoas/fornecedores&url=editar" alt="Editar fornecedor" title="Editar fornecedor"><i class="splashy-pencil"></i></a></li>
+                                                <li><a href="#" alt="Excluir fornecedor" title="Excluir fornecedor"><i class="splashy-error_x"></i></a></li>
                                             </ul>
                                             <!-- DATATABLES -->    
                                             <div class="w-box w-box-blue">
