@@ -11,7 +11,7 @@
         <meta charset="UTF-8">
         <title>SISLOC - Sistema de Locação para Eventos!</title>
         <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-        <link rel="icon" type="image/ico" href="favicon.ico">
+        <link rel="icon" type="image/ico" href="assets/favicon.ico">
 
         <!-- common stylesheets-->
         <!-- bootstrap framework css -->
@@ -28,7 +28,6 @@
         <!-- google web fonts -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
-
         <?php 
             //troca efetivamente a tela do sistema
             $urli = ( !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
@@ -146,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!-- fim top bar -->
 
             <!-- header -->
             <header>
@@ -172,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-            </header>
+            </header><!-- fim header -->
 
             <!-- breadcrumbs -->
             <div class="container-fluid">
@@ -188,7 +187,6 @@
                 $urli = ( isset( $_GET['url'] ) && !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
                 $url->trocarURL($modulo,$urli); 
             ?>
-
         <!-- footer --> 
         <footer>
             <div class="container-fluid">
