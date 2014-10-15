@@ -31,11 +31,7 @@
 
         <?php 
             //troca efetivamente a tela do sistema
-            if( !empty( $_GET['url'] ) ){
-                $urli = $_GET['url'];
-            } else {
-                $urli = "";
-            }
+            $urli = ( !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
             $url->mudaEstilo($urli,"css"); 
         ?>
 
@@ -188,13 +184,8 @@
             <!-- main content -->
             <?php 
                 //troca efetivamente a tela do sistema
-                if(!empty($_GET['modulo']) && !empty($_GET['url'])){
-                    $modulo = $_GET['modulo'];
-                    $urli = $_GET['url'];
-                } else {
-                    $modulo = "dashboard";
-                    $urli = "";
-                }
+                $modulo = ( isset( $_GET['modulo'] ) && !empty( $_GET['modulo'] ) ) ? $_GET['modulo'] : "dashboard";
+                $urli = ( isset( $_GET['url'] ) && !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
                 $url->trocarURL($modulo,$urli); 
             ?>
 
@@ -233,18 +224,14 @@
         <script src="assets/js/lib/powertip/jquery.powertip-1.1.0.min.js"></script>
         <!-- date library -->
         <script src="assets/js/moment.min.js"></script>
-        <!-- hotkeys library -->
+        <!-- hotkeys library ( teclas de atalho ) -->
         <script src="assets/js/lib/js-hotkeys/jquery.hotkeys.min.js"></script>
         <script src="assets/js/js_hotkeys.js"></script>
         <!-- common functions -->
         <script src="assets/js/beoro_common.js"></script>        
         <?php 
             //troca efetivamente a tela do sistema
-            if( !empty( $_GET['url'] ) ){
-                $urli = $_GET['url'];
-            } else {
-                $urli = "";
-            }
+            $urli = ( !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
             $url->mudaEstilo($urli,"js");
         ?>
     </body>
