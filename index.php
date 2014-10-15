@@ -162,7 +162,7 @@
                         <div class="span5">
                             <nav class="nav-icons">
                                 <ul>
-                                    <li><a href="javascript:void(0)" class="ptip_s" title="Dashboard"><i class="icsw16-home"></i></a></li>
+                                    <li><a href="javascript:void(0)" class="ptip_s" id="ptip_s" title="Dashboard"><i class="icsw16-home"></i></a></li>
                                     <li><a href="javascript:void(0)" class="ptip_s" title="Content"><i class="icsw16-create-write"></i></a></li>
                                     <li><a href="javascript:void(0)" class="ptip_s" title="Mailbox"><i class="icsw16-mail"></i><span class="badge badge-info">6</span></a></li>
                                     <li><a href="javascript:void(0)" class="ptip_s" title="Comments"><i class="icsw16-speech-bubbles"></i><span class="badge badge-important">14</span></a></li>
@@ -233,9 +233,11 @@
         <script src="assets/js/lib/powertip/jquery.powertip-1.1.0.min.js"></script>
         <!-- date library -->
         <script src="assets/js/moment.min.js"></script>
+        <!-- hotkeys library -->
+        <script src="assets/js/lib/js-hotkeys/jquery.hotkeys.min.js"></script>
+        <script src="assets/js/js_hotkeys.js"></script>
         <!-- common functions -->
-        <script src="assets/js/beoro_common.js"></script>
-
+        <script src="assets/js/beoro_common.js"></script>        
         <?php 
             //troca efetivamente a tela do sistema
             if( !empty( $_GET['url'] ) ){
@@ -243,9 +245,7 @@
             } else {
                 $urli = "";
             }
-            $url->mudaEstilo($urli,"js"); 
-            include 'inc/js_atalhos.php';
+            $url->mudaEstilo($urli,"js");
         ?>
-
     </body>
 </html>

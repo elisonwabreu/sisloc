@@ -39,7 +39,7 @@
                     "sPaginationType": "bootstrap",
                     "sDom": "R<'dt-top-row'Clf>r<'dt-wrapper't><'dt-row dt-bottom-row'<'row-fluid'ip>",
                     "fnInitComplete": function(oSettings, json) {
-                        $('.ColVis_Button').addClass('btn btn-mini btn-inverse').html('Columns');
+                        $('.ColVis_Button').attr('id','colunas').addClass('btn btn-mini btn-inverse').html('Colunas à serem pesquisadas');
                     }
                 });
             }
