@@ -20,4 +20,4 @@
             <script src="assets/js/lib/wookmark/jquery.imagesloaded.min.js"></script>
             <script src="assets/js/lib/wookmark/jquery.wookmark.min.js"></script>
 
-            <script src="assets/js/pages/beoro_dashboard.js"></script>            
+            <script src="assets/js/pages/beoro_dashboard.js"></script>         

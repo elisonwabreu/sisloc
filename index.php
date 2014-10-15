@@ -11,7 +11,7 @@
         <meta charset="UTF-8">
         <title>SISLOC - Sistema de Locação para Eventos!</title>
         <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
-        <link rel="icon" type="image/ico" href="favicon.ico">
+        <link rel="icon" type="image/ico" href="assets/favicon.ico">
 
         <!-- common stylesheets-->
         <!-- bootstrap framework css -->
@@ -28,14 +28,9 @@
         <!-- google web fonts -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
-
         <?php 
             //troca efetivamente a tela do sistema
-            if( !empty( $_GET['url'] ) ){
-                $urli = $_GET['url'];
-            } else {
-                $urli = "";
-            }
+            $urli = ( !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
             $url->mudaEstilo($urli,"css"); 
         ?>
 
@@ -150,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><!-- fim top bar -->
 
             <!-- header -->
             <header>
@@ -162,7 +157,7 @@
                         <div class="span5">
                             <nav class="nav-icons">
                                 <ul>
-                                    <li><a href="javascript:void(0)" class="ptip_s" title="Dashboard"><i class="icsw16-home"></i></a></li>
+                                    <li><a href="javascript:void(0)" class="ptip_s" id="ptip_s" title="Dashboard"><i class="icsw16-home"></i></a></li>
                                     <li><a href="javascript:void(0)" class="ptip_s" title="Content"><i class="icsw16-create-write"></i></a></li>
                                     <li><a href="javascript:void(0)" class="ptip_s" title="Mailbox"><i class="icsw16-mail"></i><span class="badge badge-info">6</span></a></li>
                                     <li><a href="javascript:void(0)" class="ptip_s" title="Comments"><i class="icsw16-speech-bubbles"></i><span class="badge badge-important">14</span></a></li>
@@ -176,7 +171,7 @@
                         </div>
                     </div>
                 </div>
-            </header>
+            </header><!-- fim header -->
 
             <!-- breadcrumbs -->
             <div class="container-fluid">
@@ -188,16 +183,10 @@
             <!-- main content -->
             <?php 
                 //troca efetivamente a tela do sistema
-                if(!empty($_GET['modulo']) && !empty($_GET['url'])){
-                    $modulo = $_GET['modulo'];
-                    $urli = $_GET['url'];
-                } else {
-                    $modulo = "dashboard";
-                    $urli = "";
-                }
+                $modulo = ( isset( $_GET['modulo'] ) && !empty( $_GET['modulo'] ) ) ? $_GET['modulo'] : "dashboard";
+                $urli = ( isset( $_GET['url'] ) && !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
                 $url->trocarURL($modulo,$urli); 
             ?>
-
         <!-- footer --> 
         <footer>
             <div class="container-fluid">
@@ -233,18 +222,15 @@
         <script src="assets/js/lib/powertip/jquery.powertip-1.1.0.min.js"></script>
         <!-- date library -->
         <script src="assets/js/moment.min.js"></script>
+        <!-- hotkeys library ( teclas de atalho ) -->
+        <script src="assets/js/lib/js-hotkeys/jquery.hotkeys.min.js"></script>
+        <script src="assets/js/js_hotkeys.js"></script>
         <!-- common functions -->
-        <script src="assets/js/beoro_common.js"></script>
-
+        <script src="assets/js/beoro_common.js"></script>        
         <?php 
             //troca efetivamente a tela do sistema
-            if( !empty( $_GET['url'] ) ){
-                $urli = $_GET['url'];
-            } else {
-                $urli = "";
-            }
-            $url->mudaEstilo($urli,"js"); 
+            $urli = ( !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
+            $url->mudaEstilo($urli,"js");
         ?>
-
     </body>
 </html>
