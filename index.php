@@ -244,6 +244,7 @@
                 $urli = "";
             }
             $url->mudaEstilo($urli,"js"); 
+            include 'inc/js_atalhos.php';
         ?>
 
     </body>
