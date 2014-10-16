@@ -28,12 +28,13 @@
         <!-- google web fonts -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Abel">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300">
+        <!-- sticky notifications -->
+            <link rel="stylesheet" href="assets/js/lib/sticky/sticky.css">
         <?php 
             //troca efetivamente a tela do sistema
             $urli = ( !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
             $url->mudaEstilo($urli,"css"); 
         ?>
-
         <!-- main stylesheet -->
         <link rel="stylesheet" href="assets/css/beoro.css">
 
@@ -180,6 +181,7 @@
                     <li><span>Tela Inicial</span></li>
                 </ul>
             </div>
+            <div class="span2"><button type="button" class="btn btn-small" id="bb-alert">Alert</button></div>
             <!-- main content -->
             <?php 
                 //troca efetivamente a tela do sistema
@@ -223,7 +225,7 @@
         <!-- date library -->
         <script src="assets/js/moment.min.js"></script>
         <!-- hotkeys library ( teclas de atalho ) -->
-        <script src="assets/js/lib/js-hotkeys/jquery.hotkeys.min.js"></script>
+        <script src="assets/js/lib/js-hotkeys/jquery.hotkeys.js"></script>
         <script src="assets/js/js_hotkeys.js"></script>
         <!-- common functions -->
         <script src="assets/js/beoro_common.js"></script>        
@@ -232,5 +234,11 @@
             $urli = ( !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
             $url->mudaEstilo($urli,"js");
         ?>
+        <!-- sticky notifications -->
+            <script src="assets/js/lib/sticky/sticky.min.js"></script>
+        <!-- bootbox -->
+            <script src="assets/js/lib/bootbox/bootbox.min.js"></script>
+            
+            <script src="assets/js/pages/beoro_notifications.js"></script>
     </body>
 </html>
