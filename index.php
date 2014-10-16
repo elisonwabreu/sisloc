@@ -181,7 +181,6 @@
                     <li><span>Tela Inicial</span></li>
                 </ul>
             </div>
-            <div class="span2"><button type="button" class="btn btn-small" id="bb-alert">Alert</button></div>
             <!-- main content -->
             <?php 
                 //troca efetivamente a tela do sistema
