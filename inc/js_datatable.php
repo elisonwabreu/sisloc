@@ -9,4 +9,5 @@
             <script src="assets/js/lib/datatables/extras/TableTools/media/js/ZeroClipboard.js"></script>
         <!-- datatables bootstrap integration -->
             <script src="assets/js/lib/datatables/js/jquery.dataTables.bootstrap.min.js"></script> 
+        
             <script src="assets/js/pages/beoro_datatables.js"></script>

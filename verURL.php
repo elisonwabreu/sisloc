@@ -1,5 +1,4 @@
-<?PHP
-
+<?php
 /* * ************************************************
  * *  CLASSE DE INCLUSÃO DE PÁGINA NO INDEX
  * *  MÉTODO - trocarURL($url)
@@ -12,13 +11,27 @@ class VerURL {
      * @param string $url o que sera incluido
      * @acess public
      */
-    public function trocarURL($modulo, $url){
-        if (empty($url)) {
+    public function trocarURL( $modulo, $url ){
+        if (empty( $url )) {
             $url = "views/$modulo/dashboard.php";
         } else {
             $url = "views/$modulo/$url.php";
         }
-        include_once($url);
+        if ( file_exists( $url ) ) {
+            include_once( $url );
+        } else {
+            echo '<div class="container-fluid">';
+                echo '<div class="row-fluid">';
+                echo '
+                    <div class="span12">
+                        <div class="w-box-header">
+                            <h4>A página solicitada não existe.</h4>
+                        </div>
+                    </div>';
+                
+                echo '</div>';
+            echo '</div>';
+        }
     }
     /*
      * @param string $include informa o tipo de arquivo a ser incluido
@@ -26,12 +39,12 @@ class VerURL {
      * @acess public
      */
     public function mudaEstilo($acao, $include = "css"){
+        $inc = '';
         if ( $include == "css" ) {
             if ( !empty( $acao ) ) {
                 if( $acao == 'cadastrar' || $acao == 'editar'){
                     $inc = 'inc/css_forms.php';
-                }
-                elseif ( $acao == 'listar' ){
+                } elseif ( $acao == 'listar' ){
                     $inc = 'inc/css_datatable.php';
                 }
             } else {
@@ -41,14 +54,13 @@ class VerURL {
             if ( !empty( $acao ) ) {
                 if( $acao == 'cadastrar' || $acao == 'editar'){
                     $inc = 'inc/js_forms.php';
-                }
-                elseif ( $acao == 'listar' ){
+                } elseif ( $acao == 'listar' ){
                     $inc = 'inc/js_datatable.php';
                 }
             } else {
                 $inc = 'inc/js_dashbord.php';
             }
         }
-        include_once($inc);
+        if ( file_exists( $inc ) ) { include_once( $inc ); } else { return FALSE; }       
     }
 }
