@@ -43,8 +43,8 @@ $mTitle = new MudaTitulo;
                                                     </select>
                                                 </div>
                                                 <div class="span2">
-                                                    <label class="req">CPF:</label>
-                                                    <input class="span12 mask_cpf pop-over" data-content="Digite aqui o número CPF do Funcionário. Digite apenas números." 
+                                                         <label class="req">CPF:</label>
+                                                         <input class="span12 mask_cpf pop-over" data-content="Digite aqui o número CPF do Funcionário. Digite apenas números." 
                                                            data-title="CPF do Funcionário" data-placement="bottom" data-trigger="hover" type="text" name="cpf" required />
                                                 </div>
 
@@ -225,6 +225,18 @@ $mTitle = new MudaTitulo;
                                                     <option value="option3">RJ</option>
                                                 </select>
                                             </div>
+                                             <div class="span1">
+                                                    <label class="req">Id. Cargo:</label>
+                                                    <input class="span12 pop-over" data-content="Digite o código do Cargo."
+                                                           data-title="F1 para buscar." data-placement="bottom" data-trigger="hover"
+                                                           type="text" name="idCargo" id="cargo" required >
+                                               </div>
+                                            <div class="span2">
+                                                    <label class="req">Cargo:</label>
+                                                    <input class="span12 pop-over" data-content="Cargo."
+                                                           data-title="Cargo que será vinculado ao funcionário" data-placement="bottom" data-trigger="hover"
+                                                           type="text" name="cargo" id="cargo" required >
+                                               </div>  
                                         </div>
                                         <div class="row-fluid">
                                             <div class="span2">
