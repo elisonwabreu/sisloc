@@ -75,16 +75,6 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="javascript:void(0)">Localidades</a>
-                                            <ul>
-                                                <li><a href="?modulo=localidades/cep_enderecos&url=listar">CEP's e Endereços</a></li>
-                                                <li><a href="?modulo=localidades/bairros&url=listar">Bairros</a></li>
-                                                <li><a href="?modulo=localidades/municipios&url=listar">Municípios</a></li>
-                                                <li><a href="?modulo=localidades/uf&url=listar">Unidades Federativas</a></li>
-                                                <li><a href="?modulo=localidades/paises&url=listar">Países</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
                                             <a href="javascript:void(0)">Divugação</a>
                                             <ul>
                                                 <li><a href="#">Convênios</a></li>
