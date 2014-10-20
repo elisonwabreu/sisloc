@@ -28,7 +28,7 @@ $mTitle = new MudaTitulo;
                                                 
                                                 <div class="span1">
                                                     <label class="req">Cód:</label>
-                                                    <input class="span12" type="text" name="id" id="id" required/>
+                                                    <input class="span12" type="text" name="id" id="id" required />
                                                 </div>
                                                 
                                                 <div class="span4">
@@ -116,23 +116,21 @@ $mTitle = new MudaTitulo;
                                                 
                                                 <div class="span2">
                                                     <label class="req">Data Retirada:</label>
-                                                    <input class="span12 mask_date" data-content="Informe a data que o cliente retirou os itens." 
-                                                           data-title="Data da retirada." data-placement="bottom" data-trigger="hover" name="dtRetirada" required />
+                                                    <input class="span12 mask_date" type="text" name="desconto" id="desconto"  />
                                                 </div>
-                                                
+
                                                 <div class="span1">
-                                                    <label class="req">Horas:</label>
-                                                    <input class="span12 mask_hora pop-over" data-content="Informa a hora que o cliente retirou os itens." 
-                                                           data-title="Hora da Retira." data-placement="bottom" data-trigger="hover" name="hrRetirada" id="hrRetirada" required/>
+                                                    <label class="">Hora:</label>
+                                                    <input class="span12 mask_hora" type="text" name="subTotal" id="subTotal"  />
                                                 </div>
                                                 
                                                 <div class="span2">
-                                                    <label class="req">Data Devolução:</label>
-                                                    <input class="span12 mask_date" data-content="Informe a data que o cliente retirou os itens." 
-                                                           data-title="Data da retirada." data-placement="bottom" data-trigger="hover" name="dtRetirada" required />
+                                                    <label class="">Data Devolução:</label>
+                                                    <input class="span12 mask_date" type="text" name="subTotal" id="subTotal"  />
                                                 </div>
-                                                 
-                                            </div> 
+                                                
+                                            </div>
+                                             
                                             
                                             <div class="row-fluid">
                                                 
@@ -145,6 +143,7 @@ $mTitle = new MudaTitulo;
                                                 </div>
                                                 
                                             </div>
+                                            
                                             <div class="formSep">
                                             <div class="row-fluid">
                                                 
