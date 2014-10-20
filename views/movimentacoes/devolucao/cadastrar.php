@@ -72,21 +72,21 @@ $mTitle = new MudaTitulo;
                                                 <div class="span3">
                                                     
                                                     <label class="req">Recebido:</label>
-                                                     <input class="span12" type="text" name="recebido" id="recebido"  />
+                                                     <input class="span12 moedaReal" type="text" name="recebido" id="recebido"  />
                                                  
                                                 </div>
                                                 
                                                 <div class="span3">
                                                     
-                                                    <label class="req">Total:</label>
-                                                    <input class="span12" type="text" name="total" id="total" disabled  />
+                                                    <label class="">Total:</label>
+                                                    <input class="span12 moedaReal" type="text" name="total" id="total" disabled  />
                                                  
                                                 </div>
                                                 
                                                 <div class="span3">
                                                     
-                                                    <label class="req">Troco:</label>
-                                                    <input class="span12" type="text" name="troco" id="troco"  />
+                                                    <label class="">Troco:</label>
+                                                    <input class="span12 moedaReal" type="text" name="troco" id="troco" disabled />
                                                  
                                                 </div>
                                             </div>    
