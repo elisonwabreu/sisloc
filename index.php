@@ -109,8 +109,8 @@
                                 <li>
                                     <a href="#">Movimentações</a>
                                     <ul>
-                                        <li><a href="?modulo=movimentacoes/contrato&url=listar">Novo Contrato</a></li>
-                                        <li><a href="#">Entrega</a></li>
+                                        <li><a href="?modulo=movimentacoes/contrato&url=cadastrar">Novo Contrato</a></li>
+                                        <li><a href="?modulo=movimentacoes/devolucao&url=cadastrar">Entrega</a></li>
                                         <li><a href="#">Devolução</a></li>
                                     </ul>
                                 </li>
