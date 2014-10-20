@@ -219,10 +219,11 @@
             $(".mask_pis").inputmask({"mask": "999.9999.999-9"});
             $(".mask_hora").inputmask({"mask": "99:99"});
             $(".mask_cnpj").inputmask({"mask": "99.999.999/9999-99"});
-            $(".mask_numeric").inputmask('R$ 999.999,99', { numericInput: false });
+            $(".mask_numeric").inputmask('R$ 999.999,99', { numericInput: true,radixPoint:'.'  });
             $(".mask_numeros").inputmask('999999', { numericInput: false});
             $(".mask_mac").inputmask({"mask": "**:**:**:**:**:**"});
             $(".mask_callback").inputmask("dd/mm/yyyy",{ "placeholder": "dd/mm/yyyy", "oncomplete": function(){ alert('Date entered: '+$(this).val()); } });
+           
         }
     };
 
