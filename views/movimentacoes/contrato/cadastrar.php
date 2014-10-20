@@ -134,6 +134,37 @@ $mTitle = new MudaTitulo;
                                                  
                                             </div> 
                                             
+                                            <div class="row-fluid">
+                                                
+                                                <div class="span12">
+                                                    
+                                                    <label class="">Itens:</label>
+                                                    <textarea class="span12 pop-over" data-title="Informações Adicionais" data-content="Limite máx. 500 caracteres." 
+                                                              data-placement="bottom" data-trigger="hover" rows="3"></textarea>
+                                                
+                                                </div>
+                                                
+                                            </div>
+                                            <div class="formSep">
+                                            <div class="row-fluid">
+                                                
+                                                <div class="span1">
+                                                    <label class="">Desconto:</label>
+                                                    <input class="span12" type="text" name="desconto" id="desconto" disabled />
+                                                </div>
+
+                                                <div class="span1">
+                                                    <label class="">Subtotal:</label>
+                                                    <input class="span12 mask_numeric" type="text" name="subTotal" id="subTotal" disabled />
+                                                </div>
+                                                
+                                                <div class="span1">
+                                                    <label class="">Total:</label>
+                                                    <input class="span12 mask_numeric" type="text" name="subTotal" id="subTotal" disabled />
+                                                </div>
+                                                
+                                            </div>
+                                            </div>
                                         </div>	
                                        
                                     </div> 
@@ -145,135 +176,25 @@ $mTitle = new MudaTitulo;
                                 <div class="formSep">
                                     <div class="span12">
                                         <div class="row-fluid"> 
-                                            <div class="span2">                                      
-                                                <label class="req">CEP:</label>
-                                                <input class="span12 pop-over mask_cep" data-title="CEP" data-content="informe um CEP válido." 
-                                                       data-placement="bottom" data-trigger="hover" type="text" name="ceps" id="" required />
-                                            </div><!-- FIM do CEP  -->
-                                            <div class="span5"><!-- Incio do Endereco  -->
-                                                <label class="req">Endereço:</label>
-                                                <input class="span12 pop-over" data-title="Endereço" data-content="Informe o endereço do Fornecedor." 
-                                                       data-placement="bottom" data-trigger="hover" type="text" name="endereco" id="id" required />
-                                            </div><!-- Incio do Endereco  -->
-                                            <div class="span1"><!-- Incio do Num  -->
-                                                <label class="req">Núm:</label>
-                                                <input class="span12 pop-over mask_numeros" data-title="Número" data-content="Informe o número da residência." 
-                                                       data-placement="bottom" data-trigger="hover" type="text" name="num" id="" required />
-                                            </div><!-- Incio do Num  -->
-                                            <div class="span4"><!-- Incio do Num  -->
-                                                <label class="">Complemento:</label>
-                                                <input class="span12 pop-over" data-title="Complemento" data-content="Informe o complemento da residência." 
-                                                       data-placement="bottom" data-trigger="hover" type="text" name="complemento" id="id" />
-                                            </div><!-- Incio do Num  -->
-                                            </div>
-                                            <div class="row-fluid">
-                                                <div class="span2"><!-- Incio do Num  -->
-                                                    <label class="req">Cidade:</label>
-                                                    <input class="span12 pop-over" data-title="Cidade" data-content="Informe a cidade a qual a empresa pertence." 
-                                                           data-placement="bottom" data-trigger="hover" type="text" name="cidade" id="id" required />
-                                                </div><!-- Incio do Num  -->
-                                                <div class="span2"><!-- Incio do Num  -->
-                                                    <label class="req">Bairro:</label>
-                                                    <input class="span12 pop-over" data-title="Bairro" data-content="Informe o bairro ao qual a empresa está situada." 
-                                                           data-placement="bottom" data-trigger="hover" type="text" name="bairro" id="id" required />
-                                                </div><!-- Incio do Num  -->
-                                            </div>
-                                            <div class="row-fluid">
-                                                <div class="span12">
-                                                    <label>Dados complementares:</label>
-                                                    <textarea class="span12 pop-over" data-title="Complemento" data-content="Insira alguma informação que possa ser importante ao Fornecedor." 
-                                                              data-placement="bottom" data-trigger="hover" rows="5" cols="60"> </textarea>
-                                                </div>
-                                            </div>    
+                                              <div class="span12">
+                                                    
+                                                    <label class="">Pagamento:</label>
+                                                    <textarea class="span12 pop-over" data-title="Informações Adicionais" data-content="Limite máx. 500 caracteres." 
+                                                              data-placement="bottom" data-trigger="hover" rows="3"></textarea>
+                                                
+                                                </div> 
                                         </div>
                                     </div>
 
                             </div><!-- Fim Endereço -->
 
-                            <div id="oldInfo" class="tab-pane"><!-- Fim Outras Informações -->
-                                <div class="formSep">
-                                    <div class="span12">
-                                        <div class="row-fluid">
-                                            <div class="span2">
-                                                <label class="req">PIS/PASEP</label>
-                                                <input class="span12 pop-over mask_pis" data-content="Digite aqui número do PIS ou PASEP"
-                                                       data-title="PIS / PASEP" data-placement="bottom" data-trigger="hover" type="text" 
-                                                       name="orgExped" id="orgExped" required />
-                                            </div>
-                                            <div class="span2">
-                                                <label class="req">Nº CTPS</label>
-                                                <input class="span12 pop-over " data-content="Digite aqui número da CTPS."
-                                                       data-title="Número Carteira de Trabalho" data-placement="bottom" data-trigger="hover" type="text" 
-                                                       name="orgExped" id="orgExped" required />
-                                            </div>
-                                            <div class="span1">
-                                                <label class="req">Serie</label>
-                                                <input class="span12 pop-over " data-content="Digite aqui a Serie da CTPS."
-                                                       data-title="Número Serie" data-placement="bottom" data-trigger="hover" type="text" 
-                                                       name="orgExped" id="orgExped" required />
-                                            </div>
-
-                                            <div class="span2">
-                                                <label class="req">UF CTPS:</label>
-                                                <select name="val1_sport" id="val1_sport" class="span12" required >
-                                                    <option></option>
-                                                    <option value="option1">CE</option>
-                                                    <option value="option2">SP</option>
-                                                    <option value="option3">RJ</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row-fluid">
-                                            <div class="span2">
-                                                <label class="req">Admissão:</label>
-                                                <input  class="span12 pop-over mask_date" data-title="Data de Admissão" data-content="Informe a data de admissão do Funcionário"
-                                                        data-placement="bottom" data-trigger="hover" type="text" name="telefone" id="" required />
-                                            </div>
-                                            <div class="span2">
-                                                <label class="req">Horário:</label>
-                                                <select name="val1_sport" id="val1_sport" class="span12" required >
-                                                    <option></option>
-                                                    <option value="A">A</option>
-                                                    <option value="B">B</option>
-                                                    <option value="C">C</option>
-                                                </select>
-                                            </div>
-                                            <div class="span6">
-                                                <label class="req">Horário de Trabalho:</label>
-                                                <input  class="span12 pop-over" data-title="Horário de Trabalho" data-content="Campo preenchido de acordo com a seleção do Horário."
-                                                        data-placement="bottom" data-trigger="hover" type="text" name="telefone" id="" disabled />
-                                            </div>
-                                        </div>
-                                        <div class="row-fluid"> 
-                                            <div class="span1">                                      
-                                                <label class="">Banco:</label>
-                                                <input class="span12" type="text" name="banco" id="id" />
-                                            </div>
-                                            <div class="span5"><!-- Incio do Endereco  -->
-                                                <label class="">Nome:</label>
-                                                <input class="span12" type="text" name="nomeBanco" id="id" />
-                                            </div><!-- Incio do Endereco  -->
-                                            <div class="span1"><!-- Incio do Num  -->
-                                                <label class="">Agência:</label>
-                                                <input class="span12" type="text" name="agencia" id="id" />
-                                            </div><!-- Incio do Num  -->
-                                            <div class="span2"><!-- Incio do Num  -->
-                                                <label class="">Conta:</label>
-                                                <input class="span12" type="text" name="conta" id="id" />
-                                            </div><!-- Incio do Num  -->
-                                            <div class="span1"><!-- Incio do Num  -->
-                                                <label class="">Dígito:</label>
-                                                <input class="span12" type="text" name="digito" id="id" />
-                                            </div><!-- Incio do Num  -->
-
-                                        </div>
-                                    </div>
-                                </div>
+                            </div>
+                            </div>
 
 
                             </div><!-- Fim Endereçso -->
                             <div class="formSep">
-                                <button type="submit" class="btn-success">Cadastrar</button>
+                                <button type="submit" class="btn-success">Confirmar</button>
                                 <button type="submit" class="btn-danger">Cancelar</button>
                             </div>
 
