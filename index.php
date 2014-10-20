@@ -75,23 +75,36 @@
                                             </ul>
                                         </li>
                                         <li>
+                                            <a href="#">Trajes</a>
+                                            <ul>
+                                                <li><a href="?modulo=trajes/trajes_pecas&url=listar">Trajes / Peças</a></li>
+                                                <li><a href="?modulo=trajes/categoria&url=listar">Categoria de Trajes</a></li>
+                                                <li><a href="?modulo=trajes/pacotes_comp&url=listar">Pacotes / Componentes dos Trajes</a></li>
+                                                <li><a href="?modulo=trajes/loc_ajuste&url=listar">Locais de ajuste</a></li>
+                                                <li><a href="?modulo=trajes/tamanhos&url=listar">Tamanhos</a></li>
+                                                <li><a href="?modulo=trajes/cores&url=listar">Cores</a></li>
+                                                <li><a href="?modulo=trajes/tecidos&url=listar">Tecidos</a></li>
+                                                <li><a href="?modulo=trajes/locale_traje&url=listar">Localização do traje</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
                                             <a href="javascript:void(0)">Divugação</a>
                                             <ul>
-                                                <li><a href="#">Convênios</a></li>
+                                                <li><a href="?modulo=divugacao/convenios&url=listar">Convênios</a></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <a href="javascript:void(0)">Eventos</a>
                                             <ul>
-                                                <li><a href="#">Eventos</a></li>
-                                                <li><a href="#">Temas de Eventos</a></li>
+                                                <li><a href="?modulo=eventos/eventos&url=listar">Eventos</a></li>
+                                                <li><a href="?modulo=eventos/tema_eventos&url=listar">Temas de Eventos</a></li>
                                             </ul>
                                         </li>
                                         <li>
                                             <a href="javascript:void(0)">Marcas</a>
                                             <ul>
-                                                <li><a href="#">Marcas</a></li>
-                                                <li><a href="#">Tipos de Marcas</a></li>
+                                                <li><a href="?modulo=marcas/marcas&url=listar">Marcas</a></li>
+                                                <li><a href="?modulo=marcas/tip_marcas&url=listar">Tipos de Marcas</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -99,37 +112,36 @@
                                 <li>
                                     <a href="#">Movimentações</a>
                                     <ul>
-                                        <li><a href="?modulo=movimentacoes/contrato&url=cadastrar">Novo Contrato</a></li>
-                                        <li><a href="?modulo=movimentacoes/devolucao&url=cadastrar">Entrega</a></li>
-                                        <li><a href="#">Devolução</a></li>
+                                        <li><a href="?modulo=movimentacoes/contrato&url=listar">Novo Contrato</a></li>
+                                        <li><a href="?modulo=movimentacoes/devolucao&url=listar">Devolução</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#">Consultas</a>
                                     <ul>
-                                        <li><a href="#">Consulta por Pedido</a></li>
-                                        <li><a href="#">Por Fornecedor</a></li>
-                                        <li><a href="#">Consulta Situção</a></li>
-                                        <li><a href="#">Consulta Financeira dos Contratos</a></li>
-                                        <li><a href="#">Gráficos dos Contratos</a></li>
-                                        <li><a href="#">Gráfico Comparativo dos Convênios</a></li>
+                                        <li><a href="?modulo=consultas/pedido&url=listar">Consulta por Pedido</a></li>
+                                        <li><a href="?modulo=consultas/fornecedor&url=listar">Por Fornecedor</a></li>
+                                        <li><a href="?modulo=consultas/situacao&url=listar">Consulta Situção</a></li>
+                                        <li><a href="?modulo=consultas/sit_financeira&url=listar">Consulta Financeira dos Contratos</a></li>
+                                        <li><a href="?modulo=consultas/graf_contrato&url=listar">Gráficos dos Contratos</a></li>
+                                        <li><a href="?modulo=consultas/graf_comp_convenios&url=listar">Gráfico Comparativo dos Convênios</a></li>
                                     </ul>
                                 </li>
                                 <li>
                                     <a href="#">Ferramentas</a>
                                     <ul>
-                                        <li><a href="#">Usuários</a></li>
-                                        <li><a href="#">Perfis de Usuários</a></li>
-                                        <li><a href="#">Alterar Senha</a></li>
+                                        <li><a href="?modulo=ferramentas/usuarios&url=listar">Usuários</a></li>
+                                        <li><a href="?modulo=ferramentas/perfis&url=listar">Perfis de Usuários</a></li>
+                                        <li><a href="?modulo=ferramentas/senha&url=listar">Alterar Senha</a></li>
                                         <li><a href="#">Backup</a>
                                             <ul>
-                                                <li><a href="#">Fazer Backup</a></li>
-                                                <li><a href="#">Importar Backup</a></li>
+                                                <li><a href="?modulo=ferramentas/backup/fazer&url=listar">Fazer Backup</a></li>
+                                                <li><a href="?modulo=ferramentas/backup/importar&url=listar">Importar Backup</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#">Configurações</a></li>
-                                        <li><a href="#">Histórico de Atualizações</a></li>
-                                        <li><a href="#">Desbloqueio de Contratos</a></li>
+                                        <li><a href="?modulo=ferramentas/configuracoes&url=listar">Configurações</a></li>
+                                        <li><a href="?modulo=ferramentas/atualizacao&url=listar">Histórico de Atualizações</a></li>
+                                        <li><a href="?modulo=ferramentas/desbloq_contratos&url=listar">Desbloqueio de Contratos</a></li>
                                     </ul>
                                 </li>
                             </ul>

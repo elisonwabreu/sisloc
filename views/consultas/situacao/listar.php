@@ -18,8 +18,8 @@
                                     <div class="tab-content"><!-- Listagem de pessoa fisica -->
                                         <div id="pf" class="tab-pane active">
                                             <ul class="ico-list">
-                                                <li><a href="?modulo=pessoas/funcionarios&url=cadastrar" alt="Novo funcionario" title="Novo funcionario"><i class="splashy-add"></i></a></li>
-                                                <li><a href="?modulo=pessoas/funcionarios&url=editar" alt="Editar funcionario" title="Editar funcionario"><i class="splashy-pencil"></i></a></li>
+                                                <li><a href="?modulo=consultas/funcionarios&url=cadastrar" alt="Novo funcionario" title="Novo funcionario"><i class="splashy-add"></i></a></li>
+                                                <li><a href="?modulo=consultas/funcionarios&url=editar" alt="Editar funcionario" title="Editar funcionario"><i class="splashy-pencil"></i></a></li>
                                                 <li><a href="#" alt="Excluir funcionario" title="Excluir funcionario"><i class="splashy-error_x"></i></a></li>
                                             </ul>
                                             <!-- DATATABLES -->    
