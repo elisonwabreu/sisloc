@@ -150,17 +150,17 @@ $mTitle = new MudaTitulo;
                                                 
                                                 <div class="span1">
                                                     <label class="">Desconto:</label>
-                                                    <input class="span12" type="text" name="desconto" id="desconto" disabled />
+                                                    <input class="span12 moedaReal" type="text" name="desconto" id="desconto" disabled />
                                                 </div>
 
                                                 <div class="span1">
                                                     <label class="">Subtotal:</label>
-                                                    <input class="span12 mask_numeric" type="text" name="subTotal" id="subTotal" disabled />
+                                                    <input class="span12 moedaReal" type="text" name="subTotal" id="subTotal" disabled />
                                                 </div>
                                                 
                                                 <div class="span1">
                                                     <label class="">Total:</label>
-                                                    <input class="span12 mask_numeric" type="text" name="subTotal" id="subTotal" disabled />
+                                                    <input class="span12 moedaReal" type="text" name="subTotal" id="subTotal" disabled />
                                                 </div>
                                                 
                                             </div>

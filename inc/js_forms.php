@@ -49,6 +49,10 @@
 <!-- jQuery validation -->
 <script src="assets/js/lib/jquery-validation/jquery.validate.min.js"></script>  
 <script src="assets/js/pages/beoro_form_validation.js"></script>
+<!-- GlobalMoneyInput library ( mascara de moedas ) -->
+<script src="assets/js/lib/global-money-input/jQuery.glob.js"></script>
+<script src="assets/js/lib/global-money-input/globinfo/jQuery.glob.pt-BR.js"></script>
+<script src="assets/js/lib/global-money-input/jquery.GlobalMoneyInput.js"></script>
 
 <script src="assets/js/pages/beoro_form_elements.js"></script>
 
@@ -67,6 +71,11 @@
                 $(".pf").hide();
             }
         });
+        /* Init Global Plugin with Brazilian Portuguese configuration */
+        var cfgCulture = 'pt-BR';
+        $.preferCulture(cfgCulture);
+
+        $('.moedaReal').maskMoney();
     });
 
 </script>
