@@ -76,6 +76,16 @@
         $.preferCulture(cfgCulture);
 
         $('.moedaReal').maskMoney();
+        
+//        $('.abas').click(function() {
+//            var abas = this.href;
+//            alert(abas);
+//            if (abas == "#listTR") {
+//                $("#btnsForms").hide();
+//            } else {
+//                $("#btnsForms").show();
+//            }
+//        });
     });
 
 </script>

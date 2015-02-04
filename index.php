@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-responsive.min.css">
         <!-- iconSweet2 icon pack (16x16) -->
         <link rel="stylesheet" href="assets/img/icsw2_16/icsw2_16.css">
+        <!-- iconSweet2 icon pack (32) -->
+        <link rel="stylesheet" href="assets/img/icsw2_32/icsw2_32.css">
         <!-- splashy icon pack -->
         <link rel="stylesheet" href="assets/img/splashy/splashy.css">
         <!-- flag icons -->
@@ -34,6 +36,7 @@
             //troca efetivamente a tela do sistema
             $urli = ( !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
             $url->mudaEstilo($urli,"css"); 
+            include 'inc/css_datatable.php';
         ?>
         <!-- main stylesheet -->
         <link rel="stylesheet" href="assets/css/beoro.css">
@@ -77,7 +80,7 @@
                                         <li>
                                             <a href="#">Trajes</a>
                                             <ul>
-                                                <li><a href="?modulo=trajes/trajes_pecas&url=listar">Trajes / Peças</a></li>
+                                                <li><a href="?modulo=trajes/trajes&url=listar">Trajes / Peças</a></li>
                                                 <li><a href="?modulo=trajes/categoria&url=listar">Categoria de Trajes</a></li>
                                                 <li><a href="?modulo=trajes/pacotes_comp&url=listar">Pacotes / Componentes dos Trajes</a></li>
                                                 <li><a href="?modulo=trajes/loc_ajuste&url=listar">Locais de ajuste</a></li>
@@ -234,6 +237,7 @@
             //troca efetivamente a tela do sistema
             $urli = ( !empty( $_GET['url'] ) ) ? $_GET['url'] : "";
             $url->mudaEstilo($urli,"js");
+            include 'inc/js_datatable.php';
         ?>
         <!-- sticky notifications -->
             <script src="assets/js/lib/sticky/sticky.min.js"></script>

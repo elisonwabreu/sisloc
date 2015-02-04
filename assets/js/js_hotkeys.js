@@ -10,6 +10,10 @@ function domo() {
         $("#bb-alert").trigger("click");
         return false;
     });
+    $(document).bind('keydown', 'f12', function assets() {
+        alert("Operação não permitida!");
+        return false;
+    });
 }
 
 jQuery(document).ready(domo);
